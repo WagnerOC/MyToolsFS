@@ -1,0 +1,434 @@
+body{
+  margin: 0 15% 0 15%;
+  background-color: #223;
+}
+
+header{
+    height: 200;
+    width: 100%;
+    margin: auto;
+    background-color: #769;
+    border-radius: 4px;
+    padding: 010px 0.5rem 10px 0.5rem;
+    box-sizing: border-box;
+    animation-name: lightHeader;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    transition: 1s;
+  }
+
+      @keyframes lightHeader{
+        0%{
+          box-shadow: 0 0 20px 0 yellow;
+        }
+        50%{
+          box-shadow: 0 0 20px 0 orange;
+        }
+        100%{
+          box-shadow: 0 0 20px 0 blue;
+        }
+      }
+
+
+@font-face {
+  font-family: vampireWars;
+  src: url(/fonts/Vampire\ Wars.otf);
+}
+
+header .toolLogoImg{
+    width: 60px;
+    position: absolute;
+    animation-name: lightEng;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    transition: 1s;
+    margin-top: 9%;
+    
+  }
+      @keyframes lightEng{
+        0%{
+          rotate:calc(340deg);
+          border-radius: 50%;
+          margin-top: 9%;
+          transition: 1s;
+        }
+        5%{
+          margin-top: 10%;
+          rotate:calc(330deg);
+        }
+        10%{
+          margin-top: 9%;
+          rotate:calc(340deg);
+        }
+        25%{
+          margin-top: 10%;
+          rotate:calc(343deg);
+        }
+        50%{     
+          rotate:calc(345deg);
+          margin-top: 9%;
+          transition: 1s;
+        }
+        65%{
+          margin-top: 10%;
+          rotate:calc(380deg);
+        }
+        75%{
+          margin-top: 9%;
+          }
+        100%{  
+          rotate:calc(355deg);
+          border-radius: 50%;
+          margin-top: 5%;
+          transition: 1s;
+          margin-top: 9%;
+        }
+      }
+
+
+/* Spans */
+header .spanMyMarg span{
+  height: 10vh;
+  font-size: 30px;
+}
+
+header .spanFullSMarg span{
+  font-size: 25px;
+}
+
+header .spanToolsMarg span{
+  font-size: 20px;
+}
+
+/* DIV PAI Da | Div spanMyMarg |Div spanFullSMarg | Div spanToolsMarg*/
+header #hSpanFStack{
+  margin: 0 0.938rem 0 0;
+  
+}
+
+header .spanMyMarg{
+  margin: 0 0 0 20%; 
+  font-family: vampireWars;
+}
+
+header .spanFullSMarg{
+  display: flex;
+  margin: -13px 0 0 35%;
+  font-family: vampireWars;
+  letter-spacing: 4px;
+}
+
+header .spanToolsMarg {
+      margin: 0 0 0 60%;
+      font-family: vampireWars;
+      letter-spacing: 2px;
+      animation-name: toolight;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+
+          header .spanToolsMarg span:nth-of-type(2){
+            animation-delay: 0.25s; 
+          }
+          header .spanToolsMarg span:nth-of-type(3){
+            animation-delay: 0.50s;
+          }
+        
+          header .spanToolsMarg span:nth-of-type(4){
+            animation-delay: 0.75s;
+          }
+        
+          header .spanToolsMarg span:nth-of-type(5){
+            animation-delay: 1s;
+          }
+        
+          header .spanToolsMarg span:nth-of-type(6){
+            animation-delay: 1.25s;
+          }
+        
+        
+          @keyframes toolight{
+            0%{
+              color: #ffe;
+              text-shadow: 
+              0 0 12px purple,
+              0 0 50px purple,
+              0 0 100px purple;
+            }
+            10%{
+              text-shadow: none;
+            }
+            100%{
+              text-shadow: none;
+            }
+          }
+  }
+
+
+/* Caixa Pai de todo contéudo */
+#boxPage{
+  display: inline-block;
+  border: 1px solid red;
+  border-radius: 4px;
+  margin-top: 20px;
+  height: 900px;
+  width: 100%;
+  background-color: white;
+}
+
+
+@media only screen and (min-width: 450px) and (max-width: 720.40px){
+  body{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  header{
+    height: 200;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(153, 150, 102);
+    border-radius: 0.625rem;
+    padding: 0.625rem 0.5rem 0.125 0.5rem;
+  }
+
+  header .spanMyMarg{
+    margin: 0 0 0 25%; 
+  }
+  
+  header .spanFullSMarg{
+    margin: -1px 0 0 35%;
+  }
+
+  header .spanToolsMarg{
+    margin: 0 0 0 62%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 450px){
+  body{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  header{
+    font-size: 18px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 20px 0 purple;
+    animation-name: lightHeader;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    transition: 1s;
+  }
+
+      @keyframes lightHeader{
+        0%{
+          box-shadow: 0 0 20px 0 yellow;
+          rotate:calc(340deg);
+        }
+        50%{
+          box-shadow: 0 0 20px 0 orange;
+          rotate:calc(345deg);
+        }
+        100%{
+          box-shadow: 0 0 20px 0 blue;
+          rotate:calc(355deg);
+        }
+      }
+  /* HEADER IMAGEM ENGRENAGEM */
+  header .toolLogoImg{
+    position: absolute;
+    animation-name: lightEng;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    transition: 1s;
+    margin-top: 10%;
+    
+  }
+      @keyframes lightEng{
+        0%{
+          rotate:calc(340deg);
+          border-radius: 50%;
+          margin-top: 10%;
+          transition: 1s;
+        }
+        5%{
+          margin-top: 11%;
+          rotate:calc(330deg);
+        }
+        10%{
+          margin-top: 10%;
+          rotate:calc(340deg);
+        }
+        25%{
+          margin-top: 11%;
+          rotate:calc(343deg);
+        }
+        50%{     
+          rotate:calc(345deg);
+          margin-top: 10%;
+          transition: 1s;
+        }
+        60%{     
+          rotate:calc(345deg);
+          margin-top: 11%;
+          transition: 1s;
+        }
+        65%{
+          margin-top: 12%;
+          rotate:calc(380deg);
+        }
+        70%{
+          margin-top: 12%;
+        }
+        72%{
+          margin-top: 13%;
+        }
+        75%{
+          margin-top: 14%;
+          }
+        100%{  
+          rotate:calc(355deg);
+          border-radius: 50%;
+          margin-top: 5%;
+          transition: 1s;
+          margin-top: 15%;
+        }
+      }
+
+  header .spanMyMarg{
+    text-align: center;
+    margin: 0;
+    animation-name: mylight;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+  }
+       .spanMyMarg span:nth-of-type(2){
+         animation-delay: 0.55s;
+       }
+       
+        @keyframes mylight{
+          0%{
+            color: #fff;
+            text-shadow: 0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple;
+          }
+          10%{
+            text-shadow: none;
+          }
+          100%{
+            text-shadow: none;
+          }
+        }
+
+  header .spanFullSMarg{
+    margin: -1px 0 0 28%;
+    animation-name: fullight;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+  }
+
+  header .spanFullSMarg span:nth-of-type(2){
+    animation-delay: 0.25s;
+  }
+  header .spanFullSMarg span:nth-of-type(3){
+    animation-delay: 0.50s;
+  }
+  header .spanFullSMarg span:nth-of-type(4){
+    animation-delay: 1s;
+  }
+  header .spanFullSMarg span:nth-of-type(5){
+    animation-delay: 1.25s;
+  }
+  header .spanFullSMarg span:nth-of-type(6){
+    animation-delay: 1.50s;
+  }
+  header .spanFullSMarg span:nth-of-type(7){
+    animation-delay: 1.75s;
+  }
+  header .spanFullSMarg span:nth-of-type(8){
+    animation-delay: 2s;
+  }
+  header .spanFullSMarg span:nth-of-type(9){
+    animation-delay: 2.25s;
+  }
+  header .spanFullSMarg span:nth-of-type(10){
+    animation-delay: 2.50s;
+  }
+  
+      @keyframes fullight{
+        0%{
+          color: #fff;
+          text-shadow: 
+          0 0 12px purple,
+          0 0 50px purple,
+          0 0 100px purple;
+        }
+        10%{
+          text-shadow: none;
+        }
+        100%{
+          text-shadow: none;
+        }
+      }
+
+
+    header .spanToolsMarg{
+      text-align: center;
+      margin: 0 ;
+      animation-name: toolight;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+
+          .spanToolsMarg span:nth-of-type(2){
+            animation-delay: 0.25s; 
+          }
+          .spanToolsMarg span:nth-of-type(3){
+            animation-delay: 0.50s;
+          }
+        
+          .spanToolsMarg span:nth-of-type(4){
+            animation-delay: 0.75s;
+          }
+        
+          .spanToolsMarg span:nth-of-type(5){
+            animation-delay: 1s;
+          }
+        
+          .spanToolsMarg span:nth-of-type(6){
+            animation-delay: 1.25s;
+          }
+        
+        
+          @keyframes toolight{
+            0%{
+              color: #fff;
+              text-shadow: 
+              0 0 12px purple,
+              0 0 50px purple,
+              0 0 100px purple;
+            }
+            10%{
+              text-shadow: none;
+            }
+            100%{
+              text-shadow: none;
+            }
+          }
+  }
+}
