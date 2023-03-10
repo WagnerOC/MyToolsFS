@@ -4,10 +4,10 @@ body{
 }
 
 header{
-    height: 200;
+    height: 150px;
     width: 100%;
     margin: auto;
-    background-color: #769;
+    background-color: #000;
     border-radius: 4px;
     padding: 010px 0.5rem 10px 0.5rem;
     box-sizing: border-box;
@@ -38,54 +38,59 @@ header{
 }
 
 header .toolLogoImg{
-    width: 60px;
+    width: 70px;
     position: absolute;
     animation-name: lightEng;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
-    transition: 1s;
-    margin-top: 9%;
+    transition: 500ms;
+    margin-top: -20%;
     
   }
       @keyframes lightEng{
         0%{
           rotate:calc(340deg);
           border-radius: 50%;
-          margin-top: 9%;
+          margin-top: 2%;
           transition: 1s;
         }
         5%{
-          margin-top: 10%;
+          margin-top: 2%;
           rotate:calc(330deg);
         }
         10%{
-          margin-top: 9%;
+          margin-top: 3%;
           rotate:calc(340deg);
         }
         25%{
-          margin-top: 10%;
+          margin-top: 3%;
           rotate:calc(343deg);
         }
         50%{     
           rotate:calc(345deg);
-          margin-top: 9%;
+          margin-top: 3%;
           transition: 1s;
         }
         65%{
-          margin-top: 10%;
+          margin-top: 3%;
           rotate:calc(380deg);
         }
         75%{
-          margin-top: 9%;
+          margin-top: 3%;
           }
+        80%{
+          margin-top: 3%;
+          }
+        95%{
+          margin-top: 3%;
+        }
         100%{  
           rotate:calc(355deg);
           border-radius: 50%;
-          margin-top: 5%;
+          margin-top: 3%;
           transition: 1s;
-          margin-top: 9%;
         }
       }
 
@@ -93,67 +98,318 @@ header .toolLogoImg{
 /* Spans */
 header .spanMyMarg span{
   height: 10vh;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 header .spanFullSMarg span{
-  font-size: 25px;
+  font-size: 30px;
 }
 
 header .spanToolsMarg span{
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* DIV PAI Da | Div spanMyMarg |Div spanFullSMarg | Div spanToolsMarg*/
-header #hSpanFStack{
-  margin: 0 0.938rem 0 0;
-  
-}
 
 header .spanMyMarg{
-  margin: 0 0 0 20%; 
-  font-family: vampireWars;
+    margin: 15px 0 0 15%; 
+    font-family: vampireWars;
+    color: goldenrod;
+    animation-name: spamy;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+  }     
+       /* M */
+       .spanMyMarg span:nth-of-type(1){
+         color:rgb(234, 247, 162);
+         text-shadow: 0 0 2px blue;
+         padding: 0 5px 0 0;
+         font-size: 50px;
+         animation-delay: 0s;
+         animation-name: spamy;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-timing-function: ease-in-out;
+        @keyframes spamy {
+          0%{
+            color: #610a0a;
+            text-shadow: 
+            0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple
+          }
+          10%{
+            text-shadow: none;
+          }
+          100%{
+
+          }
+        }
+       }
+       /* Y */
+       .spanMyMarg span:nth-of-type(2){
+         text-shadow: 0 0 2px blue;
+         animation-delay: 0.55s;
+
+         @keyframes mylight{
+          0%{
+            color:#580707;
+            text-shadow: 0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple;
+          }
+          10%{
+            text-shadow: none;
+          }
+          100%{
+            text-shadow: none;
+          }
+       }
+       
 }
 
+/* Animação FullS */
 header .spanFullSMarg{
   display: flex;
-  margin: -13px 0 0 35%;
+  margin: -13px 0 0 25%;
   font-family: vampireWars;
+  color:gold;
   letter-spacing: 4px;
+  animation-name: fullight;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
 }
+      /* F */
+      header .spanFullSMarg span:nth-of-type(1){
+        color:rgb(234, 247, 162);
+        text-shadow: 0 0 2px blue;
+        padding: 0 5px 0 0;
+        font-size: 50px;
+        animation-delay: 0s;
+        animation-name: spafulls;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        @keyframes spafulls {
+          0%{
+            color: #660e02;
+            text-shadow: 
+            0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple
+          }
+          10%{
+            text-shadow: none;
+          }
+          100%{
 
-header .spanToolsMarg {
-      margin: 0 0 0 60%;
-      font-family: vampireWars;
-      letter-spacing: 2px;
-      animation-name: toolight;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
+          }
+        }
+      }
+      /* U */
+      header .spanFullSMarg span:nth-of-type(2){
+        text-shadow: 0 0 2px blue;
+        animation-delay: 0.25s;
+        animation-name: spafull;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        @keyframes spafull {
+          0%{
+            color: #580707;
+            text-shadow: 
+            0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple
+          }
+          10%{
+            text-shadow: none;
+          }
+          100%{
 
-          header .spanToolsMarg span:nth-of-type(2){
-            animation-delay: 0.25s; 
           }
-          header .spanToolsMarg span:nth-of-type(3){
-            animation-delay: 0.50s;
+      }
+    }
+      /* L */
+      header .spanFullSMarg span:nth-of-type(3){
+        text-shadow: 0 0 2px blue;
+        animation-delay: 0.50s;
+        animation-name: spafull;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        @keyframes spafull {
+          0%{
+            color: #580707;
+            text-shadow: 
+            0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple
           }
-        
-          header .spanToolsMarg span:nth-of-type(4){
-            animation-delay: 0.75s;
+          10%{
+            text-shadow: none;
           }
-        
-          header .spanToolsMarg span:nth-of-type(5){
-            animation-delay: 1s;
+          100%{
+
           }
-        
-          header .spanToolsMarg span:nth-of-type(6){
-            animation-delay: 1.25s;
+        }
+      }
+      /* L */
+      header .spanFullSMarg span:nth-of-type(4){
+        text-shadow: 0 0 2px blue;
+        animation-delay: 1s;
+        animation-name: spafull;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        @keyframes spafull {
+          0%{
+            color: #580707;
+            text-shadow: 
+            0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple
           }
-        
-        
-          @keyframes toolight{
+          10%{
+            text-shadow: none;
+          }
+          100%{
+
+          }
+        }
+      }
+      /* S */
+      header .spanFullSMarg span:nth-of-type(5){
+        text-shadow: 0 0 2px blue;
+        animation-delay: 1.25s;
+        animation-name: spafull;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        @keyframes spafull {
+          0%{
+            color: #580707;
+            text-shadow: 
+            0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple
+          }
+          10%{
+            text-shadow: none;
+          }
+          100%{
+
+          }
+        }
+      }
+      /* T */
+      header .spanFullSMarg span:nth-of-type(6){
+        text-shadow: 0 0 2px blue;
+        animation-delay: 1.50s;
+        animation-name: spafull;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        @keyframes spafull {
+          0%{
+            color: #580707;
+            text-shadow: 
+            0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple
+          }
+          10%{
+            text-shadow: none;
+          }
+          100%{
+
+          }
+        }
+      }
+      /* A */
+      header .spanFullSMarg span:nth-of-type(7){
+        text-shadow: 0 0 2px blue;
+        animation-delay: 1.75s;
+        animation-name: spafull;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        @keyframes spafull {
+          0%{
+            color: #580707;
+            text-shadow: 
+            0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple
+          }
+          10%{
+            text-shadow: none;
+          }
+          100%{
+
+          }
+        }
+      }
+      /* C */
+      header .spanFullSMarg span:nth-of-type(8){
+        text-shadow: 0 0 2px blue;
+        animation-delay: 2s;
+        animation-name: spafull;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        @keyframes spafull {
+          0%{
+            color: #580707;
+            text-shadow: 
+            0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple
+          }
+          10%{
+            text-shadow: none;
+          }
+          100%{
+
+          }
+        }
+      }
+      /* K */
+      header .spanFullSMarg span:nth-of-type(9){
+        text-shadow: 0 0 2px blue;
+        animation-delay: 2.25s;
+        animation-name: spafull;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        @keyframes spafull {
+          0%{
+            color: #580707;
+            text-shadow: 
+            0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple
+          }
+          10%{
+            text-shadow: none;
+          }
+          100%{
+
+          }
+        }
+      }
+      
+      header .spanFullSMarg span:nth-of-type(10){
+        animation-delay: 2.50s;
+      }
+
+          @keyframes fullight{
             0%{
-              color: #ffe;
+              color: #fff;
               text-shadow: 
               0 0 12px purple,
               0 0 50px purple,
@@ -164,6 +420,80 @@ header .spanToolsMarg {
             }
             100%{
               text-shadow: none;
+            }
+          }
+
+/* IMG LAMPADA */
+header .lampada{
+  position: absolute;
+  margin: -14px 0 0 23.3%;
+  width: 40px;
+  rotate:calc(50deg) ;
+}
+
+/*ANIMAÇÃO TOOLS */
+header .spanToolsMarg {
+      margin: 0 0 0 60%;
+      position: absolute;
+      color: rgb(21, 92, 245);
+      text-shadow: 0 0 10px blue;
+      font-family: vampireWars;
+      letter-spacing: 2px;
+      animation-name: toolight;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+
+          header .spanToolsMarg span:nth-of-type(2){
+            animation-delay: 0.25s;
+            text-shadow: 0 0 10px blue;          
+          }
+          header .spanToolsMarg span:nth-of-type(3){
+            animation-delay: 0.50s;
+            text-shadow: 0 0 10px blue;
+          }
+        
+          header .spanToolsMarg span:nth-of-type(4){
+            animation-delay: 0.75s;
+            text-shadow: 0 0 10px blue;
+          }
+        
+          header .spanToolsMarg span:nth-of-type(5){
+            animation-delay: 1s;
+            text-shadow: 0 0 10px blue;
+          }
+        
+          header .spanToolsMarg span:nth-of-type(6){
+            animation-delay: 1.25s;
+            text-shadow: 0 0 10px blue;
+          }
+        
+        
+          @keyframes toolight{
+            0%{
+              color: rgb(240, 198, 63);
+              text-shadow: 
+              0 0 12px purple,
+              0 0 50px purple,
+              0 0 100px purple;
+              rotate:calc(0deg);
+            }
+            20%{
+              text-shadow: none;
+              text-shadow: none;
+              rotate:calc(20deg);
+            }
+            40%{
+              rotate:calc(-10deg);
+            }
+            60%{
+              rotate:calc(25deg);
+            }
+            80%{
+              rotate:calc(10deg);
+            }
+            100%{
+              rotate:calc(0deg);
             }
           }
   }
@@ -181,6 +511,135 @@ header .spanToolsMarg {
 }
 
 
+/* LAMPADA MEDIA SCREEN */
+@media only screen and (min-width: 1278px) and (max-width: 1338.40px){
+  header .lampada{
+    position: absolute;
+    margin: -14px 0 0 23.8%;
+    width: 40px;
+    rotate:calc(50deg) ;
+  }
+}
+        /* LAMPADA MEDIA SCREEN */
+        @media only screen and (min-width: 1114px) and (max-width: 1277px){
+          header .lampada{
+            position: absolute;
+            margin: -14px 0 0 24.4%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+        /* LAMPADA MEDIA SCREEN */
+        @media only screen and (min-width: 1020px) and (max-width: 1113.9px){
+          header .lampada{
+            position: absolute;
+            margin: -14px 0 0 24.8%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+        /* LAMPADA MEDIA SCREEN */
+        @media only screen and (min-width: 1000px) and (max-width: 1019.9px){
+          header .lampada{
+            position: absolute;
+            margin: -14px 0 0 24.8%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+         /* LAMPADA MEDIA SCREEN */
+         @media only screen and (min-width: 923px) and (max-width: 999.9px){
+          header .lampada{
+            position: absolute;
+            margin: -15px 0 0 25.4%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+        @media only screen and (min-width: 898.8px) and (max-width: 923.9px){
+          header .lampada{
+            position: absolute;
+            margin: -15px 0 0 25.4%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+        @media only screen and (min-width: 885px) and (max-width: 898.7px){
+          header .lampada{
+            position: absolute;
+            margin: -15px 0 0 25.4%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+        @media only screen and (min-width: 813px) and (max-width: 884.9px){
+          header .lampada{
+            position: absolute;
+            margin: -15px 0 0 25.9%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+        @media only screen and (min-width: 754px) and (max-width: 812.9px){
+          header .lampada{
+            position: absolute;
+            margin: -15px 0 0 26.1%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+        @media only screen and (min-width: 660px) and (max-width: 753.6px){
+          header .lampada{
+            position: absolute;
+            margin: -15px 0 0 27.2%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+        @media only screen and (min-width: 570px) and (max-width: 659.9px){
+          header .lampada{
+            position: absolute;
+            margin: -15px 0 0 28.4%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+        @media only screen and (min-width: 558px) and (max-width: 570.8px){
+          header .lampada{
+            position: absolute;
+            margin: -15px 0 0 28.6%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+        @media only screen and (min-width: 500px) and (max-width: 558.9px){
+          header .lampada{
+            position: absolute;
+            margin: -15px 0 0 29.7%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+        @media only screen and (min-width: 451px) and (max-width: 499.9px){
+          header .lampada{
+            position: absolute;
+            margin: -15px 0 0 30.8%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+        @media only screen and (min-width: 0px) and (max-width: 450.9px){
+          header .lampada{
+            display: none;
+            position: absolute;
+            margin: -15px 0 0 30.8%;
+            width: 40px;
+            rotate:calc(50deg) ;
+          }
+        }
+
+
+/* MEDIA SCREEN */
 @media only screen and (min-width: 450px) and (max-width: 720.40px){
   body{
     margin-left: 5%;
@@ -190,24 +649,26 @@ header .spanToolsMarg {
     height: 200;
     width: 100%;
     margin: auto;
-    background-color: rgb(153, 150, 102);
+    background-color: #000;
     border-radius: 0.625rem;
     padding: 0.625rem 0.5rem 0.125 0.5rem;
   }
 
   header .spanMyMarg{
-    margin: 0 0 0 25%; 
+    margin: 0 0 0 20%; 
   }
   
   header .spanFullSMarg{
-    margin: -1px 0 0 35%;
+    margin: -1px 0 0 25%;
   }
 
   header .spanToolsMarg{
-    margin: 0 0 0 62%;
+    margin: 0 0 0 43%;
   }
 }
 
+
+/* MEDIA SCREEN */
 @media only screen and (min-width: 0px) and (max-width: 450px){
   body{
     margin-left: 5%;
@@ -216,6 +677,7 @@ header .spanToolsMarg {
 
   header{
     font-size: 18px;
+    height: 120px;
     width: 100%;
     background-color: black;
     color: white;
@@ -308,127 +770,80 @@ header .spanToolsMarg {
   header .spanMyMarg{
     text-align: center;
     margin: 0;
-    animation-name: mylight;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in-out;
   }
-       .spanMyMarg span:nth-of-type(2){
-         animation-delay: 0.55s;
-       }
-       
-        @keyframes mylight{
-          0%{
-            color: #fff;
-            text-shadow: 0 0 12px purple,
-            0 0 50px purple,
-            0 0 100px purple;
-          }
-          10%{
-            text-shadow: none;
-          }
-          100%{
-            text-shadow: none;
-          }
-        }
 
   header .spanFullSMarg{
     margin: -1px 0 0 28%;
-    animation-name: fullight;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in-out;
   }
 
-  header .spanFullSMarg span:nth-of-type(2){
-    animation-delay: 0.25s;
+  header .spanToolsMarg{
+     text-align: center;
+     margin: 0 ;
   }
-  header .spanFullSMarg span:nth-of-type(3){
-    animation-delay: 0.50s;
-  }
-  header .spanFullSMarg span:nth-of-type(4){
-    animation-delay: 1s;
-  }
-  header .spanFullSMarg span:nth-of-type(5){
-    animation-delay: 1.25s;
-  }
-  header .spanFullSMarg span:nth-of-type(6){
-    animation-delay: 1.50s;
-  }
-  header .spanFullSMarg span:nth-of-type(7){
-    animation-delay: 1.75s;
-  }
-  header .spanFullSMarg span:nth-of-type(8){
-    animation-delay: 2s;
-  }
-  header .spanFullSMarg span:nth-of-type(9){
-    animation-delay: 2.25s;
-  }
-  header .spanFullSMarg span:nth-of-type(10){
-    animation-delay: 2.50s;
-  }
-  
-      @keyframes fullight{
+}
+
+/*ANIMAÇÃO TOOLS */
+header .spanToolsMarg {
+  margin: 0 0 0 20%;
+  color: rgb(21, 92, 245);
+  text-shadow: 0 0 10px blue;
+  font-family: vampireWars;
+  letter-spacing: 2px;
+  animation-name: toolight;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+      header .spanToolsMarg span:nth-of-type(2){
+        animation-delay: 0.25s;
+        text-shadow: 0 0 10px blue;          
+      }
+      header .spanToolsMarg span:nth-of-type(3){
+        animation-delay: 0.50s;
+        text-shadow: 0 0 10px blue;
+      }
+    
+      header .spanToolsMarg span:nth-of-type(4){
+        animation-delay: 0.75s;
+        text-shadow: 0 0 10px blue;
+      }
+    
+      header .spanToolsMarg span:nth-of-type(5){
+        animation-delay: 1s;
+        text-shadow: 0 0 10px blue;
+      }
+    
+      header .spanToolsMarg span:nth-of-type(6){
+        animation-delay: 1.25s;
+        text-shadow: 0 0 10px blue;
+      }
+    
+    
+      @keyframes toolight{
         0%{
-          color: #fff;
+          color: rgb(240, 198, 63);
           text-shadow: 
           0 0 12px purple,
           0 0 50px purple,
           0 0 100px purple;
+          rotate:calc(0deg);
         }
-        10%{
+        20%{
           text-shadow: none;
+          text-shadow: none;
+          rotate:calc(20deg);
+        }
+        40%{
+          rotate:calc(-10deg);
+        }
+        60%{
+          rotate:calc(25deg);
+        }
+        80%{
+          rotate:calc(10deg);
         }
         100%{
-          text-shadow: none;
+          rotate:calc(0deg);
         }
       }
-
-
-    header .spanToolsMarg{
-      text-align: center;
-      margin: 0 ;
-      animation-name: toolight;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-
-          .spanToolsMarg span:nth-of-type(2){
-            animation-delay: 0.25s; 
-          }
-          .spanToolsMarg span:nth-of-type(3){
-            animation-delay: 0.50s;
-          }
-        
-          .spanToolsMarg span:nth-of-type(4){
-            animation-delay: 0.75s;
-          }
-        
-          .spanToolsMarg span:nth-of-type(5){
-            animation-delay: 1s;
-          }
-        
-          .spanToolsMarg span:nth-of-type(6){
-            animation-delay: 1.25s;
-          }
-        
-        
-          @keyframes toolight{
-            0%{
-              color: #fff;
-              text-shadow: 
-              0 0 12px purple,
-              0 0 50px purple,
-              0 0 100px purple;
-            }
-            10%{
-              text-shadow: none;
-            }
-            100%{
-              text-shadow: none;
-            }
-          }
-  }
 }
