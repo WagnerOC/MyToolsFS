@@ -5,6 +5,10 @@ body {
   box-shadow: 0 0 1000px purple;
 }
 
+html {
+  color: white;
+}
+
 header {
   height: 150px;
   width: 100%;
@@ -14,7 +18,7 @@ header {
   padding: 10px 0.5rem 10px 0.5rem;
   box-sizing: border-box;
   animation-name: lightHeader;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: ease-in-out;
@@ -23,22 +27,19 @@ header {
 
 @keyframes lightHeader {
   0% {
-    box-shadow: 0 0 20px 0 yellow;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 0, 0.493);
   }
   50% {
-    box-shadow: 0 0 20px 0 orange;
+    box-shadow: 0 0 20px 0 rgba(255, 166, 0, 0.507);
   }
   100% {
-    box-shadow: 0 0 20px 0 blue;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 255, 0.527);
   }
 }
-@font-face {
-  font-family: vampireWars;
-  src: url(/fonts/Vampire\ Wars.otf);
-}
-header .toolLogoImg {
+header .toolLogoImg { /* Img Engrenagem */
   width: 70px;
   position: absolute;
+  border-radius: 50%;
   animation-name: lightEng;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -50,10 +51,9 @@ header .toolLogoImg {
 
 @keyframes lightEng {
   0% {
+    margin-top: 2%;
     rotate: 340deg;
     border-radius: 50%;
-    margin-top: 2%;
-    transition: 1s;
   }
   5% {
     margin-top: 2%;
@@ -68,9 +68,8 @@ header .toolLogoImg {
     rotate: 343deg;
   }
   50% {
-    rotate: 345deg;
     margin-top: 3%;
-    transition: 1s;
+    rotate: 345deg;
   }
   65% {
     margin-top: 3%;
@@ -86,10 +85,9 @@ header .toolLogoImg {
     margin-top: 3%;
   }
   100% {
+    margin-top: 3%;
     rotate: 355deg;
     border-radius: 50%;
-    margin-top: 3%;
-    transition: 1s;
   }
 }
 /* Spans */
@@ -109,7 +107,7 @@ header .spanToolsMarg span {
 /* Div spanMyMarg |Div spanFullSMarg | Div spanToolsMarg*/
 header .spanMyMarg {
   margin: 15px 0 0 15%;
-  font-family: vampireWars;
+  font-family: "Alfa Slab One", cursive;
   color: goldenrod;
   animation-name: spamy;
   animation-duration: 5s;
@@ -138,6 +136,9 @@ header .spanMyMarg {
   10% {
     text-shadow: none;
   }
+  100% {
+    text-shadow: none;
+  }
 }
 
 /* Y */
@@ -158,11 +159,12 @@ header .spanMyMarg {
   }
 }
 
-/* Animação FullS */
+/* Animação FullStack */
 header .spanFullSMarg {
   display: flex;
   margin: -13px 0 0 25%;
-  font-family: vampireWars;
+  font-family: "Alfa Slab One", cursive;
+  font-weight: 700;
   color: gold;
   letter-spacing: 4px;
   animation-name: fullight;
@@ -192,6 +194,9 @@ header .spanFullSMarg span:nth-of-type(1) {
   10% {
     text-shadow: none;
   }
+  100% {
+    text-shadow: none;
+  }
 }
 
 /* U */
@@ -209,6 +214,9 @@ header .spanFullSMarg span:nth-of-type(2) {
     text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
   }
   10% {
+    text-shadow: none;
+  }
+  100% {
     text-shadow: none;
   }
 }
@@ -230,6 +238,9 @@ header .spanFullSMarg span:nth-of-type(3) {
   10% {
     text-shadow: none;
   }
+  100% {
+    text-shadow: none;
+  }
 }
 
 /* L */
@@ -247,6 +258,9 @@ header .spanFullSMarg span:nth-of-type(4) {
     text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
   }
   10% {
+    text-shadow: none;
+  }
+  100% {
     text-shadow: none;
   }
 }
@@ -268,6 +282,9 @@ header .spanFullSMarg span:nth-of-type(5) {
   10% {
     text-shadow: none;
   }
+  100% {
+    text-shadow: none;
+  }
 }
 
 /* T */
@@ -285,6 +302,9 @@ header .spanFullSMarg span:nth-of-type(6) {
     text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
   }
   10% {
+    text-shadow: none;
+  }
+  100% {
     text-shadow: none;
   }
 }
@@ -306,6 +326,9 @@ header .spanFullSMarg span:nth-of-type(7) {
   10% {
     text-shadow: none;
   }
+  100% {
+    text-shadow: none;
+  }
 }
 
 /* C */
@@ -323,6 +346,9 @@ header .spanFullSMarg span:nth-of-type(8) {
     text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
   }
   10% {
+    text-shadow: none;
+  }
+  100% {
     text-shadow: none;
   }
 }
@@ -344,39 +370,107 @@ header .spanFullSMarg span:nth-of-type(9) {
   10% {
     text-shadow: none;
   }
-}
-
-header .spanFullSMarg span:nth-of-type(10) {
-  animation-delay: 2.5s;
-}
-
-@keyframes fullight {
-  0% {
-    color: #fff;
-    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
-  }
-  10% {
-    text-shadow: none;
-  }
   100% {
     text-shadow: none;
   }
 }
+
 /* IMG LAMPADA */
 header .lampada {
   position: absolute;
   margin: -14px 0 0 23.3%;
+  border-radius: 50%;
   width: 40px;
   rotate: 50deg;
+  box-shadow: 0px 0px 30px 2px gold;
+  animation-name: lamp;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes lamp {
+  0% {
+    box-shadow: 1px 0px 30px 2px gold;
+  }
+  50% {
+    box-shadow: none;
+  }
+  60% {
+    box-shadow: 0 4px 40px 2px gold;
+  }
+  70% {
+    box-shadow: 4px 0px 30px 1px gold;
+  }
+  80% {
+    animation-delay: 5ms;
+  }
+  100% {
+    box-shadow: -1px -1px 30px 2px gold;
+  }
 }
 
-/*ANIMAÇÃO TOOLS */
+header .lampada:hover {
+  box-shadow: 0 0 30px 2px greenyellow;
+  animation-name: lamp1;
+  animation-duration: 0.1ms;
+  animation-iteration-count: infinite;
+}
+@keyframes lamp1 {
+  0% {
+    box-shadow: -1px 0px 40px 2px gold;
+  }
+  13% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0px -1px 40px 1px gold;
+  }
+}
+
+/* IMG ROSCA */
+.imgRosca {
+  position: absolute;
+  width: 30px;
+  margin-top: -157px;
+  margin-left: 61%;
+  rotate: 340deg;
+  animation-name: parafuso;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+  transition: 500ms;
+}
+@keyframes parafuso {
+  0% {
+    rotate: 238deg;
+    box-shadow: 0 0 10px purple;
+  }
+  5% {
+    rotate: 235deg;
+  }
+  10% {
+    rotate: 246deg;
+  }
+  25% {
+    rotate: 245deg;
+  }
+  50% {
+    rotate: 245deg;
+  }
+  65% {
+    rotate: 260deg;
+  }
+  100% {
+    rotate: 255deg;
+  }
+}
+
 header .spanToolsMarg {
-  margin: 0 0 0 60%;
+  margin: 0px 0 0 60%;
   position: absolute;
   color: rgb(21, 92, 245);
   text-shadow: 0 0 10px blue;
-  font-family: vampireWars;
+  font-family: "Patua One", cursive;
   letter-spacing: 2px;
   animation-name: toolight;
   animation-duration: 7s;
@@ -428,12 +522,7 @@ header .spanToolsMarg header .spanToolsMarg span:nth-of-type(6) {
   }
 }
 
-/* | HEADER | REDES SOCIAIS | */
-ul li a {
-  text-decoration: none;
-  color: white;
-}
-
+/* Lista Redes Sociais*/
 header ul {
   list-style-type: none;
   position: absolute;
@@ -441,10 +530,14 @@ header ul {
   margin-left: 57%;
   margin: -120px 0 0 57%;
   padding: 0;
+  color: white;
+  animation-name: redesociais;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 header ul li {
   font-size: 22px;
-  color: white;
   padding: 10px;
   letter-spacing: 5px;
   margin-bottom: 15px;
@@ -454,10 +547,26 @@ header ul a:hover {
   color: orange;
   transition: 600ms;
 }
+@keyframes redesociais {
+  0% {
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+/* | HEADER | REDES SOCIAIS | */
+header ul li a {
+  font-family: "Amaranth", sans-serif;
+  text-decoration: none;
+  color: white;
+  margin-left: 100%;
+}
 
 /* GITHUB */
 a.tooltip:hover span.github {
-  background-image: url("/img/github.png");
+  background-image: url("./img/github.png");
   background-position: center center;
   background-size: contain; /* <------ */
   background-repeat: no-repeat;
@@ -475,7 +584,7 @@ a.tooltip:hover span.github {
 
 /* Netlify*/
 a.tooltip:hover span.netlify {
-  background-image: url("/img/netlify.png");
+  background-image: url("./img/netlify.png");
   background-position: center center;
   background-size: contain; /* <------ */
   background-repeat: no-repeat;
@@ -493,7 +602,7 @@ a.tooltip:hover span.netlify {
 
 /* Linkedin */
 a.tooltip:hover span.linkedin {
-  background-image: url(/img/linkedin.png);
+  background-image: url("./img/linkedin.png");
   background-position: center center;
   background-size: contain; /* <------ */
   background-repeat: no-repeat;
@@ -1056,6 +1165,14 @@ a.tooltip span {
   z-index: 20;
 }
 
+@media only screen and (min-width: 1278px) and (max-width: 1338.4px) {
+  header .lampada {
+    position: absolute;
+    margin: -14px 0 0 23.7%;
+    width: 40px;
+    rotate: 50deg;
+  }
+}
 /* LAMPADA MEDIA SCREEN */
 @media only screen and (min-width: 1278px) and (max-width: 1338.4px) {
   header .lampada {
@@ -1073,6 +1190,22 @@ a.tooltip span {
     width: 40px;
     rotate: 50deg;
   }
+  .imgRosca {
+    margin-left: 61%;
+  }
+  header ul {
+    margin-top: -112px;
+    margin-left: 56%;
+    color: black;
+  }
+  header .imgDoDesenvolvedor {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-top: -133px;
+    margin-left: 49%;
+    border-radius: 50%;
+  }
 }
 /* LAMPADA MEDIA SCREEN */
 @media only screen and (min-width: 1020px) and (max-width: 1113.9px) {
@@ -1081,6 +1214,14 @@ a.tooltip span {
     margin: -14px 0 0 24.8%;
     width: 40px;
     rotate: 50deg;
+  }
+  .imgRosca {
+    margin-left: 61%;
+  }
+  header ul {
+    margin-top: -112px;
+    margin-left: 54.5%;
+    color: black;
   }
 }
 /* LAMPADA MEDIA SCREEN */
@@ -1091,6 +1232,14 @@ a.tooltip span {
     width: 40px;
     rotate: 50deg;
   }
+  .imgRosca {
+    margin-left: 61%;
+  }
+  header ul {
+    margin-top: -112px;
+    margin-left: 54.5%;
+    color: black;
+  }
 }
 /* LAMPADA MEDIA SCREEN */
 @media only screen and (min-width: 923px) and (max-width: 999.9px) {
@@ -1100,6 +1249,22 @@ a.tooltip span {
     width: 40px;
     rotate: 50deg;
   }
+  .imgRosca {
+    margin-left: 61%;
+  }
+  header ul {
+    margin-top: -112px;
+    margin-left: 54%;
+    color: black;
+  }
+  header .imgDoDesenvolvedor {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 47%;
+    border-radius: 50%;
+  }
 }
 @media only screen and (min-width: 898.8px) and (max-width: 923.9px) {
   header .lampada {
@@ -1107,6 +1272,14 @@ a.tooltip span {
     margin: -15px 0 0 25.4%;
     width: 40px;
     rotate: 50deg;
+  }
+  .imgRosca {
+    margin-left: 61%;
+  }
+  header ul {
+    margin-top: -112px;
+    margin-left: 53%;
+    color: black;
   }
 }
 @media only screen and (min-width: 885px) and (max-width: 898.7px) {
@@ -1116,6 +1289,14 @@ a.tooltip span {
     width: 40px;
     rotate: 50deg;
   }
+  .imgRosca {
+    margin-left: 58%;
+  }
+  header ul {
+    margin-top: -112px;
+    margin-left: 52%;
+    color: black;
+  }
 }
 @media only screen and (min-width: 813px) and (max-width: 884.9px) {
   header .lampada {
@@ -1123,6 +1304,14 @@ a.tooltip span {
     margin: -15px 0 0 25.9%;
     width: 40px;
     rotate: 50deg;
+  }
+  .imgRosca {
+    margin-left: 58%;
+  }
+  header ul {
+    margin-top: -112px;
+    margin-left: 51%;
+    color: black;
   }
 }
 @media only screen and (min-width: 754px) and (max-width: 812.9px) {
@@ -1132,6 +1321,14 @@ a.tooltip span {
     width: 40px;
     rotate: 50deg;
   }
+  .imgRosca {
+    margin-left: 58%;
+  }
+  header ul {
+    margin-top: -112px;
+    margin-left: 49%;
+    color: black;
+  }
 }
 @media only screen and (min-width: 660px) and (max-width: 753.6px) {
   header .lampada {
@@ -1139,6 +1336,18 @@ a.tooltip span {
     margin: -15px 0 0 27.2%;
     width: 40px;
     rotate: 50deg;
+  }
+  header ul {
+    margin-top: -100px;
+    color: black;
+  }
+  .imgRosca {
+    margin-left: 60%;
+  }
+  header ul {
+    margin-top: -112px;
+    margin-left: 48%;
+    color: black;
   }
 }
 @media only screen and (min-width: 570px) and (max-width: 659.9px) {
@@ -1148,6 +1357,9 @@ a.tooltip span {
     width: 40px;
     rotate: 50deg;
   }
+  header ul {
+    margin-left: 65%;
+  }
 }
 @media only screen and (min-width: 558px) and (max-width: 570.8px) {
   header .lampada {
@@ -1155,6 +1367,11 @@ a.tooltip span {
     margin: -15px 0 0 28.6%;
     width: 40px;
     rotate: 50deg;
+  }
+  header ul {
+    margin-top: -112px;
+    color: black;
+    margin-left: 63%;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 558.9px) {
@@ -1164,6 +1381,11 @@ a.tooltip span {
     width: 40px;
     rotate: 50deg;
   }
+  header ul {
+    margin-top: -112px;
+    color: black;
+    margin-left: 63%;
+  }
 }
 @media only screen and (min-width: 451px) and (max-width: 499.9px) {
   header .lampada {
@@ -1171,6 +1393,14 @@ a.tooltip span {
     margin: -15px 0 0 30.8%;
     width: 40px;
     rotate: 50deg;
+  }
+  header ul {
+    margin-top: -112px;
+    color: black;
+    margin-left: 65%;
+  }
+  header ul li {
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 450.9px) {
@@ -1181,12 +1411,30 @@ a.tooltip span {
     width: 40px;
     rotate: 50deg;
   }
+  header ul {
+    margin-top: -90px;
+    color: black;
+    margin-left: 75%;
+  }
+  header ul li {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 12px;
+  }
 }
 /* MEDIA SCREEN */
 @media only screen and (min-width: 450px) and (max-width: 720.4px) {
   body {
     margin-left: 5%;
     margin-right: 5%;
+  }
+  .imgRosca {
+    margin-left: 75%;
+  }
+  header ul {
+    margin-top: -100px;
+    margin-left: 65%;
+    color: black;
   }
   header {
     height: 200;
@@ -1211,6 +1459,9 @@ a.tooltip span {
   body {
     margin-left: 5%;
     margin-right: 5%;
+  }
+  .imgRosca {
+    display: none;
   }
   header {
     font-size: 18px;
@@ -1370,13 +1621,476 @@ header .spanToolsMarg header .spanToolsMarg span:nth-of-type(6) {
   }
 }
 
-/*Header*/ /* Caixa Pai de todo contéudo */
-#boxPage {
-  display: inline-block;
-  border: 1px solid red;
-  border-radius: 4px;
-  margin-top: 20px;
-  height: 900px;
+@media only screen and (min-width: 0px) and (max-width: 1115px) {
+  header .imgDoDesenvolvedor {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 57%;
+    border-radius: 50%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 720px) {
+  header .imgDoDesenvolvedor {
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    margin-top: 100px;
+    margin-left: 73%;
+    border-radius: 50%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 720px) {
+  header .imgDoDesenvolvedor {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    margin-top: 100px;
+    margin-left: 69%;
+    border-radius: 50%;
+  }
+}
+/*Header*/
+section {
+  max-width: 100%;
+  height: 100vh;
+  background-color: rgba(172, 172, 155, 0.0745098039);
+  margin: 35px 0 0 0;
+  border-radius: 10px;
+  padding: 2%;
+  border: 1x solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 100px 1px purple;
+}
+
+/* IMG Desenvolvedor*/
+.imgDoDesenvolvedor {
   width: 100%;
-  background-color: white;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.caixaImg {
+  position: relative;
+  background-image: url(../img/Wagner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixaImg::before, .caixaImg::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  background: linear-gradient(45deg, #FFFF00, #00FF00, #0099FF, #001AFF, #A200FF, #FF0055, #FF0000, #FFFF00, #00FF00, #0099FF, #001AFF, #A200FF);
+  background-size: 300%;
+  animation: animarborda 8s linear alternate infinite;
+}
+
+@keyframes animarborda {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+.caixaImg::after {
+  filter: blur(50px);
+}
+
+.caixaDevStudent {
+  margin: 20px 0 0 10px;
+  background-color: rgba(255, 0, 0, 0.144);
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px 20px 20px 20px;
+  letter-spacing: 3px;
+  line-height: 28px;
+}
+
+/* Dev Span*/
+.caixaDevStudent .dev {
+  margin-top: 20px;
+  font-family: "Black Ops One", cursive;
+}
+
+.caixaDevStudent .dev span:nth-of-type(1) {
+  font-size: 22px;
+  animation-name: devlight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.25s;
+}
+@keyframes devlight {
+  0% {
+    color: rgb(10, 125, 202);
+    text-shadow: 0 0 12px rgb(128, 115, 0), 0 0 50px rgba(15, 11, 250, 0.534), 0 0 100px rgb(255, 239, 15);
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .dev span:nth-of-type(2) {
+  animation-name: devlight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+@keyframes devlight {
+  0% {
+    color: rgb(53, 180, 218);
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .dev span:nth-of-type(3) {
+  font-size: 22px;
+  animation-name: devlight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.75s;
+}
+@keyframes devlight {
+  0% {
+    color: rgb(53, 218, 196);
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+/* Cargo Span*/
+.caixaDevStudent .cargo span:nth-of-type(1) {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 25px;
+  animation-name: cargolight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.25s;
+}
+@keyframes cargolight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .cargo span:nth-of-type(2) {
+  font-family: "Literata", serif;
+  animation-name: cargolight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.25s;
+}
+@keyframes cargolight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .cargo span:nth-of-type(3) {
+  font-family: "Literata", serif;
+  animation-name: cargolight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.25s;
+}
+@keyframes cargolight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .cargo span:nth-of-type(4) {
+  font-family: "Literata", serif;
+  animation-name: cargolight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.25s;
+}
+@keyframes cargolight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .cargo span:nth-of-type(5) {
+  font-family: "Literata", serif;
+  animation-name: cargolight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.25s;
+}
+@keyframes cargolight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .cargo span:nth-of-type(6) {
+  font-family: "Literata", serif;
+  animation-name: cargolight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.25s;
+}
+@keyframes cargolight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .cargo span:nth-of-type(7) {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 23px;
+  animation-name: cargolight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.9s;
+}
+@keyframes cargolight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+/* Name Span*/
+.caixaDevStudent .name span {
+  font-size: 20px;
+  animation-name: namelight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+.caixaDevStudent .name span:nth-of-type(1) {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 25px;
+  animation-name: namelight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+@keyframes namelight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .name span:nth-of-type(2) {
+  font-family: "Literata", serif;
+  animation-name: namelight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+@keyframes namelight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .name span:nth-of-type(3) {
+  font-family: "Literata", serif;
+  animation-name: namelight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+@keyframes namelight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .name span:nth-of-type(4) {
+  font-family: "Literata", serif;
+  animation-name: namelight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+@keyframes namelight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+    font-family: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .name span:nth-of-type(5) {
+  font-family: "Literata", serif;
+  animation-name: namelight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+@keyframes namelight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaDevStudent .name span:nth-of-type(6) {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 23px;
+  animation-name: namelight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+@keyframes namelight {
+  0% {
+    color: white;
+    text-shadow: 0 0 12px purple, 0 0 50px purple, 0 0 100px purple;
+  }
+  10% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.caixaMyTools1 {
+  display: flex;
+  float: left;
+}
+
+.titulocontentMyTools {
+  margin-left: 50%;
+}
+
+section a {
+  color: orange;
+  text-decoration: none;
+}
+
+section ul {
+  color: lightskyblue;
+  list-style-type: none;
 }/*# sourceMappingURL=index.css.map */

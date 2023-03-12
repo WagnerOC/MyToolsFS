@@ -1,12 +1,16 @@
+
+
 body{
   margin: 0 15% 0 15%;
   background-color: #223;
   box-shadow: 0 0 1000px purple;
-  
 }
 
-header{
-    
+html{
+  color: white;
+}
+
+header{   
     height: 150px;
     width: 100%;
     margin: auto;
@@ -15,7 +19,7 @@ header{
     padding: 010px 0.5rem 10px 0.5rem;
     box-sizing: border-box;
     animation-name: lightHeader;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
@@ -23,26 +27,16 @@ header{
   }
 
       @keyframes lightHeader{
-        0%{
-          box-shadow: 0 0 20px 0 yellow;
-        }
-        50%{
-          box-shadow: 0 0 20px 0 orange;
-        }
-        100%{
-          box-shadow: 0 0 20px 0 blue;
-        }
+        0%  {box-shadow: 0 0 20px 0 rgba(255, 255, 0, 0.493);}
+        50% {box-shadow: 0 0 20px 0 rgba(255, 166, 0, 0.507);}
+        100%{box-shadow: 0 0 20px 0 rgba(0, 0, 255, 0.527);}
       }
 
 
-@font-face {
-  font-family: vampireWars;
-  src: url(/fonts/Vampire\ Wars.otf);
-}
-
-header .toolLogoImg{
+header .toolLogoImg{          /* Img Engrenagem */
     width: 70px;
     position: absolute;
+    border-radius: 50%;
     animation-name: lightEng;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -53,48 +47,16 @@ header .toolLogoImg{
     
   }
       @keyframes lightEng{
-        0%{
-          rotate:calc(340deg);
-          border-radius: 50%;
-          margin-top: 2%;
-          transition: 1s;
-        }
-        5%{
-          margin-top: 2%;
-          rotate:calc(330deg);
-        }
-        10%{
-          margin-top: 3%;
-          rotate:calc(340deg);
-        }
-        25%{
-          margin-top: 3%;
-          rotate:calc(343deg);
-        }
-        50%{     
-          rotate:calc(345deg);
-          margin-top: 3%;
-          transition: 1s;
-        }
-        65%{
-          margin-top: 3%;
-          rotate:calc(380deg);
-        }
-        75%{
-          margin-top: 3%;
-          }
-        80%{
-          margin-top: 3%;
-          }
-        95%{
-          margin-top: 3%;
-        }
-        100%{  
-          rotate:calc(355deg);
-          border-radius: 50%;
-          margin-top: 3%;
-          transition: 1s;
-        }
+        0%  {margin-top: 2%; rotate:calc(340deg);border-radius: 50%;}
+        5%  {margin-top: 2%; rotate:calc(330deg);}
+        10% {margin-top: 3%; rotate:calc(340deg);}
+        25% {margin-top: 3%; rotate:calc(343deg);}
+        50% {margin-top: 3%; rotate:calc(345deg);}
+        65% {margin-top: 3%; rotate:calc(380deg);}
+        75% {margin-top: 3%;}
+        80% {margin-top: 3%;}
+        95% {margin-top: 3%;}
+        100%{margin-top: 3%;rotate:calc(355deg);border-radius: 50%;}
       }
 
 
@@ -116,7 +78,7 @@ header .spanToolsMarg span{
 
 header .spanMyMarg{
     margin: 15px 0 0 15%; 
-    font-family: vampireWars;
+    font-family: 'Alfa Slab One', cursive;
     color: goldenrod;
     animation-name: spamy;
     animation-duration: 5s;
@@ -135,22 +97,19 @@ header .spanMyMarg{
          animation-duration: 5s;
          animation-iteration-count: infinite;
          animation-timing-function: ease-in-out;
-        @keyframes spamy {
-          0%{
-            color: #610a0a;
-            text-shadow: 
-            0 0 12px purple,
-            0 0 50px purple,
-            0 0 100px purple
-          }
-          10%{
-            text-shadow: none;
-          }
-          100%{
-
+          @keyframes spamy {
+            0%{
+              color: #610a0a;
+              text-shadow: 
+              0 0 12px purple,
+              0 0 50px purple,
+              0 0 100px purple
+            }
+            10%{text-shadow: none;}
+            100%{text-shadow: none;}
           }
         }
-       }
+
        /* Y */
        .spanMyMarg span:nth-of-type(2){
          text-shadow: 0 0 2px blue;
@@ -163,21 +122,18 @@ header .spanMyMarg{
             0 0 50px purple,
             0 0 100px purple;
           }
-          10%{
-            text-shadow: none;
-          }
-          100%{
-            text-shadow: none;
-          }
-       }
+          10%{text-shadow: none;}
+          100%{text-shadow: none;}
+         }
        
-}
+        }
 
-/* Animação FullS */
+/* Animação FullStack */
 header .spanFullSMarg{
   display: flex;
   margin: -13px 0 0 25%;
-  font-family: vampireWars;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: 700;
   color:gold;
   letter-spacing: 4px;
   animation-name: fullight;
@@ -205,14 +161,11 @@ header .spanFullSMarg{
             0 0 50px purple,
             0 0 100px purple
           }
-          10%{
-            text-shadow: none;
-          }
-          100%{
-
-          }
+          10% {text-shadow: none;}
+          100%{text-shadow: none;}
         }
       }
+
       /* U */
       header .spanFullSMarg span:nth-of-type(2){
         text-shadow: 0 0 2px blue;
@@ -229,14 +182,11 @@ header .spanFullSMarg{
             0 0 50px purple,
             0 0 100px purple
           }
-          10%{
-            text-shadow: none;
-          }
-          100%{
-
-          }
+          10% {text-shadow: none;}
+          100%{text-shadow: none;}
+        }
       }
-    }
+
       /* L */
       header .spanFullSMarg span:nth-of-type(3){
         text-shadow: 0 0 2px blue;
@@ -253,14 +203,11 @@ header .spanFullSMarg{
             0 0 50px purple,
             0 0 100px purple
           }
-          10%{
-            text-shadow: none;
-          }
-          100%{
-
-          }
+          10%{text-shadow: none;}
+          100%{text-shadow: none;}
         }
       }
+
       /* L */
       header .spanFullSMarg span:nth-of-type(4){
         text-shadow: 0 0 2px blue;
@@ -277,14 +224,11 @@ header .spanFullSMarg{
             0 0 50px purple,
             0 0 100px purple
           }
-          10%{
-            text-shadow: none;
-          }
-          100%{
-
-          }
+          10% {text-shadow: none;}
+          100%{text-shadow: none;}
         }
       }
+
       /* S */
       header .spanFullSMarg span:nth-of-type(5){
         text-shadow: 0 0 2px blue;
@@ -301,14 +245,11 @@ header .spanFullSMarg{
             0 0 50px purple,
             0 0 100px purple
           }
-          10%{
-            text-shadow: none;
-          }
-          100%{
-
-          }
+          10%{text-shadow: none;}
+          100%{text-shadow: none;}
         }
       }
+
       /* T */
       header .spanFullSMarg span:nth-of-type(6){
         text-shadow: 0 0 2px blue;
@@ -325,14 +266,11 @@ header .spanFullSMarg{
             0 0 50px purple,
             0 0 100px purple
           }
-          10%{
-            text-shadow: none;
-          }
-          100%{
-
-          }
+          10%{text-shadow: none;}
+          100%{text-shadow: none;}
         }
       }
+
       /* A */
       header .spanFullSMarg span:nth-of-type(7){
         text-shadow: 0 0 2px blue;
@@ -349,14 +287,11 @@ header .spanFullSMarg{
             0 0 50px purple,
             0 0 100px purple
           }
-          10%{
-            text-shadow: none;
-          }
-          100%{
-
-          }
+          10%{text-shadow: none;}
+          100%{text-shadow: none;}
         }
       }
+
       /* C */
       header .spanFullSMarg span:nth-of-type(8){
         text-shadow: 0 0 2px blue;
@@ -373,14 +308,11 @@ header .spanFullSMarg{
             0 0 50px purple,
             0 0 100px purple
           }
-          10%{
-            text-shadow: none;
-          }
-          100%{
-
-          }
+          10%{text-shadow: none;}
+          100%{text-shadow: none;}
         }
       }
+
       /* K */
       header .spanFullSMarg span:nth-of-type(9){
         text-shadow: 0 0 2px blue;
@@ -397,50 +329,78 @@ header .spanFullSMarg{
             0 0 50px purple,
             0 0 100px purple
           }
-          10%{
-            text-shadow: none;
-          }
-          100%{
-
-          }
+          10%{text-shadow: none;}
+          100%{text-shadow: none;}
         }
       }
-      
-      header .spanFullSMarg span:nth-of-type(10){
-        animation-delay: 2.50s;
-      }
-
-          @keyframes fullight{
-            0%{
-              color: #fff;
-              text-shadow: 
-              0 0 12px purple,
-              0 0 50px purple,
-              0 0 100px purple;
-            }
-            10%{
-              text-shadow: none;
-            }
-            100%{
-              text-shadow: none;
-            }
-          }
 
 /* IMG LAMPADA */
 header .lampada{
   position: absolute;
   margin: -14px 0 0 23.3%;
+  border-radius: 50%;
   width: 40px;
   rotate:calc(50deg) ;
+  box-shadow: 0px 0px 30px 2px gold;
+  animation-name: lamp;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+    @keyframes lamp{
+      0%{box-shadow: 1px 0px 30px 2px gold;}
+      50%{box-shadow:none;}
+      60%{box-shadow: 0 4px 40px 2px gold;}
+      70%{box-shadow: 4px 0px 30px 1px gold; }
+      80%{animation-delay: 5ms;}
+      100%{box-shadow: -1px -1px 30px 2px gold;}
+    }
 }
 
-/*ANIMAÇÃO TOOLS */
+      header .lampada:hover{
+        box-shadow: 0 0 30px 2px greenyellow;
+        animation-name: lamp1;
+        animation-duration: 0.1ms;
+        animation-iteration-count: infinite;
+          @keyframes lamp1{
+            0%{box-shadow: -1px 0px 40px 2px gold;}
+            13%{box-shadow: none;}
+            100%{box-shadow: 0px -1px 40px 1px gold}
+          }
+      }
+
+
+/* IMG ROSCA */
+.imgRosca{
+    position: absolute;
+    width: 30px;
+    margin-top: -157px;
+    margin-left:61%;
+    rotate: calc(340deg);
+    animation-name: parafuso;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    transition: 500ms;
+
+
+        @keyframes parafuso{
+          0%  {rotate:calc(238deg);box-shadow: 0 0 10px purple;}
+          5%  {rotate:calc(235deg);}
+          10% {rotate:calc(246deg);}
+          25% {rotate:calc(245deg);}
+          50% {rotate:calc(245deg)}
+          65% {rotate:calc(260deg);}
+          100%{rotate:calc(255deg);}
+        }
+}
+
+
 header .spanToolsMarg {
-      margin: 0 0 0 60%;
+      margin: 0px 0 0 60%;
       position: absolute;
       color: rgb(21, 92, 245);
       text-shadow: 0 0 10px blue;
-      font-family: vampireWars;
+      font-family: 'Patua One', cursive;
       letter-spacing: 2px;
       animation-name: toolight;
       animation-duration: 7s;
@@ -501,13 +461,8 @@ header .spanToolsMarg {
           }
   }
 
-  /* | HEADER | REDES SOCIAIS | */
 
-  ul li a{
-    text-decoration: none;
-    color: white;      
-  }
-
+  /* Lista Redes Sociais*/
   header ul {
     list-style-type: none;
     position: absolute;   
@@ -515,27 +470,48 @@ header .spanToolsMarg {
     margin-left: 57%;
     margin: -120px 0 0 57%;
     padding: 0;
-    
+        
         li {
           font-size: 22px;
-          color: white;
           padding: 10px;
           letter-spacing: 5px;
           margin-bottom: 15px;
-          width: 560%;      
+          width: 560%;    
         }
         a:hover{
           color: orange;
-          transition: 600ms;       
+          transition: 600ms;        
+        }    
+        color: white;
+        animation-name: redesociais;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        @keyframes redesociais{
+            0%{
+            text-shadow: 0 0 12px purple,
+            0 0 50px purple,
+            0 0 100px purple
+            }
+            100%{
+              text-shadow:none;
+            }
         }
-        
   }
   
+  /* | HEADER | REDES SOCIAIS | */
+  
+  header ul li a{
+    font-family: 'Amaranth', sans-serif;
+    text-decoration: none;
+    color: white;    
+    margin-left: 100%;  
+  }   
 
 
   /* GITHUB */
   a.tooltip:hover span.github {
-    background-image: url("/img/github.png");
+    background-image: url("./img/github.png");
     background-position: center center;
     background-size: contain; /* <------ */
     background-repeat: no-repeat;
@@ -551,11 +527,12 @@ header .spanToolsMarg {
     animation-name: girar;
     animation-duration: 7s;
     animation-iteration-count: infinite;
+
     
   }
   /* Netlify*/
   a.tooltip:hover span.netlify {
-    background-image: url("/img/netlify.png");
+    background-image: url("./img/netlify.png");
     background-position: center center;
     background-size: contain; /* <------ */
     background-repeat: no-repeat;
@@ -574,7 +551,7 @@ header .spanToolsMarg {
   }
   /* Linkedin */
   a.tooltip:hover span.linkedin {
-    background-image: url(/img/linkedin.png);
+    background-image: url("./img/linkedin.png");
     background-position: center center;
     background-size: contain; /* <------ */
     background-repeat: no-repeat;
@@ -730,6 +707,15 @@ header .spanToolsMarg {
   }
 
 
+  @media only screen and (min-width: 1278px) and (max-width: 1338.40px){
+    header .lampada{
+      position: absolute;
+      margin: -14px 0 0 23.7%;
+      width: 40px;
+      rotate:calc(50deg) ;
+    }
+  }
+
 /* LAMPADA MEDIA SCREEN */
 @media only screen and (min-width: 1278px) and (max-width: 1338.40px){
   header .lampada{
@@ -747,6 +733,22 @@ header .spanToolsMarg {
             width: 40px;
             rotate:calc(50deg) ;
           }
+          .imgRosca{
+            margin-left: 61%;
+          }
+          header ul{
+            margin-top: -112px;
+            margin-left: 56%;
+            color: black; 
+          }
+          header .imgDoDesenvolvedor{
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            margin-top: -133px;
+            margin-left: 49%;
+            border-radius: 50%;
+          }
         }
         /* LAMPADA MEDIA SCREEN */
         @media only screen and (min-width: 1020px) and (max-width: 1113.9px){
@@ -756,6 +758,14 @@ header .spanToolsMarg {
             width: 40px;
             rotate:calc(50deg) ;
           }
+          .imgRosca{
+            margin-left: 61%;
+          }
+          header ul{
+            margin-top: -112px;
+            margin-left: 54.5%;
+            color: black; 
+          } 
         }
         /* LAMPADA MEDIA SCREEN */
         @media only screen and (min-width: 1000px) and (max-width: 1019.9px){
@@ -764,6 +774,14 @@ header .spanToolsMarg {
             margin: -14px 0 0 24.8%;
             width: 40px;
             rotate:calc(50deg) ;
+          }
+          .imgRosca{
+            margin-left: 61%;
+          }
+          header ul{
+            margin-top: -112px;
+            margin-left: 54.5%;
+            color: black; 
           }
         }
          /* LAMPADA MEDIA SCREEN */
@@ -774,6 +792,22 @@ header .spanToolsMarg {
             width: 40px;
             rotate:calc(50deg) ;
           }
+          .imgRosca{
+            margin-left: 61%;
+          }
+          header ul{
+            margin-top: -112px;
+            margin-left: 54%;
+            color: black; 
+          } 
+          header .imgDoDesenvolvedor{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            margin-left: 47%;
+            border-radius: 50%;
+          }
         }
         @media only screen and (min-width: 898.8px) and (max-width: 923.9px){
           header .lampada{
@@ -782,6 +816,14 @@ header .spanToolsMarg {
             width: 40px;
             rotate:calc(50deg) ;
           }
+          .imgRosca{
+            margin-left: 61%;
+          }
+          header ul{
+            margin-top: -112px;
+            margin-left: 53%;
+            color: black; 
+          } 
         }
         @media only screen and (min-width: 885px) and (max-width: 898.7px){
           header .lampada{
@@ -790,6 +832,14 @@ header .spanToolsMarg {
             width: 40px;
             rotate:calc(50deg) ;
           }
+          .imgRosca{
+            margin-left: 58%;
+          }
+          header ul{
+            margin-top: -112px;
+            margin-left: 52%;
+            color: black; 
+          } 
         }
         @media only screen and (min-width: 813px) and (max-width: 884.9px){
           header .lampada{
@@ -798,6 +848,14 @@ header .spanToolsMarg {
             width: 40px;
             rotate:calc(50deg) ;
           }
+          .imgRosca{
+            margin-left: 58%;
+          }
+          header ul{
+            margin-top: -112px;
+            margin-left: 51%;
+            color: black; 
+          } 
         }
         @media only screen and (min-width: 754px) and (max-width: 812.9px){
           header .lampada{
@@ -806,14 +864,39 @@ header .spanToolsMarg {
             width: 40px;
             rotate:calc(50deg) ;
           }
+          .imgRosca{
+            margin-left: 58%;
+          }
+          header ul{
+            margin-top: -112px;
+            margin-left: 49%;
+            color: black; 
+          }
+          
         }
+
+         
+
         @media only screen and (min-width: 660px) and (max-width: 753.6px){
           header .lampada{
             position: absolute;
             margin: -15px 0 0 27.2%;
             width: 40px;
             rotate:calc(50deg) ;
+          }        
+          header ul{
+            margin-top: -100px;
+            color: black;         
+          } 
+          .imgRosca{
+            margin-left: 60%;
           }
+          header ul{
+            margin-top: -112px;
+            margin-left: 48%;
+            color: black; 
+          } 
+          
         }
         @media only screen and (min-width: 570px) and (max-width: 659.9px){
           header .lampada{
@@ -822,6 +905,9 @@ header .spanToolsMarg {
             width: 40px;
             rotate:calc(50deg) ;
           }
+          header ul{
+            margin-left: 65%;
+          } 
         }
         @media only screen and (min-width: 558px) and (max-width: 570.8px){
           header .lampada{
@@ -830,6 +916,11 @@ header .spanToolsMarg {
             width: 40px;
             rotate:calc(50deg) ;
           }
+          header ul{
+            margin-top: -112px;
+            color: black;
+            margin-left: 63%;
+          } 
         }
         @media only screen and (min-width: 500px) and (max-width: 558.9px){
           header .lampada{
@@ -838,6 +929,11 @@ header .spanToolsMarg {
             width: 40px;
             rotate:calc(50deg) ;
           }
+          header ul{
+            margin-top: -112px;
+            color: black;
+            margin-left: 63%;
+          } 
         }
         @media only screen and (min-width: 451px) and (max-width: 499.9px){
           header .lampada{
@@ -845,6 +941,14 @@ header .spanToolsMarg {
             margin: -15px 0 0 30.8%;
             width: 40px;
             rotate:calc(50deg) ;
+          }
+          header ul{
+            margin-top: -112px;
+            color: black;
+            margin-left: 65%;
+          } 
+          header ul li{
+            font-size: 15px;
           }
         }
         @media only screen and (min-width: 0px) and (max-width: 450.9px){
@@ -855,6 +959,17 @@ header .spanToolsMarg {
             width: 40px;
             rotate:calc(50deg) ;
           }
+          header ul{
+            margin-top: -90px;
+            color: black;
+            margin-left: 75%;
+          } 
+          header ul li{
+            font-size: 11px;
+            font-weight: 700;
+            padding: 12px;
+          }
+          
         }
 
 
@@ -864,6 +979,15 @@ header .spanToolsMarg {
     margin-left: 5%;
     margin-right: 5%;
   }
+  .imgRosca{
+    margin-left: 75%;
+  }
+  header ul{
+    margin-top: -100px;
+    margin-left: 65%;
+    color: black; 
+  } 
+
   header{
     height: 200;
     width: 100%;
@@ -887,12 +1011,18 @@ header .spanToolsMarg {
 }
 
 
+
 /* MEDIA SCREEN */
 @media only screen and (min-width: 0px) and (max-width: 450px){
   body{
     margin-left: 5%;
     margin-right: 5%;
   }
+
+  .imgRosca{
+    display: none;
+  }
+
 
   header{
     font-size: 18px;
@@ -1035,8 +1165,7 @@ header .spanToolsMarg {
       header .spanToolsMarg span:nth-of-type(6){
         animation-delay: 1.25s;
         text-shadow: 0 0 10px blue;
-      }
-    
+      }    
     
       @keyframes toolight{
         0%{
@@ -1065,4 +1194,37 @@ header .spanToolsMarg {
           rotate:calc(0deg);
         }
       }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1115px){
+  header .imgDoDesenvolvedor{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 57%;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width:720px){
+  header .imgDoDesenvolvedor{
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    margin-top: 100px;
+    margin-left: 73%;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width:720px){
+  header .imgDoDesenvolvedor{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    margin-top: 100px;
+    margin-left: 69%;
+    border-radius: 50%;
+  }
 }
