@@ -6,15 +6,13 @@
 
 body{
   margin: 0 15% 0 15%;
-  background-color: #221000;
+ 
   box-shadow: 0 0 1000px purple;
-  
-  width: 85%;
+  width: 70%;
   background-image:url("../img/developer_body_backg.jpg.png");
-  background-repeat: no-repeat;
-  background-size: content;
+  background-repeat: repeat-y;
+  background-size: cover;
   background-position: center; 
-  z-index: -100;
 }
     
 
@@ -26,7 +24,9 @@ body:hover{
 
 
 html{
+  font-weight: 700;
   color: white;
   height: 100%;
+  text-shadow: 1px 1px 7px rgb(115, 211, 6);
 }
 

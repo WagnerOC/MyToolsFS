@@ -6,14 +6,24 @@
 
 
     /* Cargo Span*/
-    
-    .caixaDevStudent .cargo span:nth-of-type(1){
+
+    .caixaDevStudent .cargo{
       font-family: 'Stick No Bills', sans-serif;
-      font-size: 25px;
+      font-size: 20px;
+      letter-spacing: 4px;
+
+      margin-top: -10px;
+      margin-bottom: 10px;
+
       animation-name: cargolight;
       animation-duration: 5s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
+    }
+    /* S */
+    .caixaDevStudent .cargo span:nth-of-type(1){
+      font-size: 30px;
+      
       animation-delay: 0.25s; 
           @keyframes cargolight{
             0%{
@@ -28,14 +38,11 @@
             100%{text-shadow: none;}
           }
    }
-
+   /* T */
    .caixaDevStudent .cargo span:nth-of-type(2){
     font-family: 'Literata', serif;
-    animation-name: cargolight;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 0.25s; 
+    
+    animation-delay: 0.50s; 
         @keyframes cargolight{
           0%{
             color: white;
@@ -49,14 +56,11 @@
           100%{text-shadow: none;}
         }
   }
-
+  /* U */
   .caixaDevStudent .cargo span:nth-of-type(3){
     font-family: 'Literata', serif;
-    animation-name: cargolight;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 0.25s; 
+
+    animation-delay: 0.75s; 
         @keyframes cargolight{
           0%{
             color: white;
@@ -70,14 +74,11 @@
           100%{text-shadow: none;}
         }
   }
-
+  /* D */
   .caixaDevStudent .cargo span:nth-of-type(4){
     font-family: 'Literata', serif;
-    animation-name: cargolight;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 0.25s; 
+
+    animation-delay: 1s; 
         @keyframes cargolight{
           0%{
             color: white;
@@ -91,14 +92,11 @@
           100%{text-shadow: none;}
         }
   }
-
+  /* E */
   .caixaDevStudent .cargo span:nth-of-type(5){
     font-family: 'Literata', serif;
-    animation-name: cargolight;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 0.25s; 
+  
+    animation-delay: 1.25s; 
         @keyframes cargolight{
           0%{
             color: white;
@@ -112,14 +110,11 @@
           100%{text-shadow: none;}
         }
   }
-
+  /* N */
   .caixaDevStudent .cargo span:nth-of-type(6){
     font-family: 'Literata', serif;
-    animation-name: cargolight;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 0.25s; 
+    
+    animation-delay: 1.50s; 
         @keyframes cargolight{
           0%{
             color: white;
@@ -133,15 +128,12 @@
           100%{text-shadow: none;}
         }
   }
-
+  /* T */
   .caixaDevStudent .cargo span:nth-of-type(7){
     font-family: 'Stick No Bills', sans-serif;
-    font-size: 23px;
-    animation-name: cargolight;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 0.90s; 
+    font-size: 30px;
+   
+    animation-delay: 1.75s; 
         @keyframes cargolight{
           0%{
             color: white;

@@ -86,7 +86,7 @@ a.tooltip:hover span.spanRubyAnimation{
 }
 
 
-/* Animation Whatsapp */
+/* Animation Gmail */
 a.tooltip:hover span.spanGmailAnimation {
   background-image: url("../img/gmail_logo.png");
   background-position: center center;
@@ -125,6 +125,8 @@ a.tooltip:hover span.spanWhatsappAnimation {
   animation-duration: 7s;
   animation-iteration-count: infinite;
 }
+
+
 
 @keyframes girar {
   0%{rotate:  calc(60deg);  margin-left:10%; box-shadow: 0 0 50px rgb(255, 0, 255);}
@@ -187,7 +189,7 @@ a.tooltip:hover span.spanWhatsappAnimation {
   57%{rotate: calc(15deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 38, 255);}
   58%{rotate: calc(10deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 17, 255);}
   59%{rotate: calc(5deg);   margin-left:10%; box-shadow: 0 0 50px rgb(29, 42, 226);}
-  60%{rotate:calc(0deg);    margin-left:10%; box-shadow: 0 0 50px rgb(55, 0, 255);}
+  60%{rotate: calc(0deg);   margin-left:10%; box-shadow: 0 0 50px rgb(55, 0, 255);}
   61%{rotate: calc(-5deg);  margin-left:10%; box-shadow: 0 0 50px rgb(89, 0, 255);}
   62%{rotate: calc(-10deg); margin-left:10%; box-shadow: 0 0 50px rgb(119, 0, 255);}
   63%{rotate: calc(-15deg); margin-left:10%; box-shadow: 0 0 50px rgb(162, 0, 255);}

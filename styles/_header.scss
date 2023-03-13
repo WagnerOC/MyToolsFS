@@ -406,6 +406,96 @@ header .lampada{
         }
 }
 
+/* CAIXA STARS HEADER */
+header .caixaImgToolsPCStars{
+  position: absolute;  
+  margin: -120px 0 0 16.8%;
+  z-index: 1000;
+}
+    /* IMG STAR HEADER */
+    header .ImgToolsPCStars{
+      width: 50px;
+      margin-left: -5px;
+      margin-right: -8px;
+      border-radius: 50%;
+      animation-name: star1;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+      opacity: 0.9;
+    }
+        /* STAR 1 HEADER */
+        header .ImgToolsPCStars:nth-of-type(1){
+          animation-delay: 0.25s;
+          @keyframes star1{
+            0%{
+              transform: rotateY(0deg);
+              box-shadow:0 0px 100px rgb(128, 119, 0);
+            }
+            100%{
+              transform: rotateY(360deg);
+              box-shadow: none;
+            }
+          }
+        }
+        /* STAR 2 HEADER */
+        header .ImgToolsPCStars:nth-of-type(2){
+          
+          @keyframes star1{
+            0%{
+              transform: rotateY(0deg);
+              box-shadow:0 0px 100px rgb(255, 251, 0);
+            }
+            100%{
+              transform: rotateY(360deg);
+              box-shadow: none;
+            }
+          }
+        }
+        /* STAR 3 HEADER*/
+        header .ImgToolsPCStars:nth-of-type(3){
+          animation-delay: 0.75s;
+          @keyframes star1{
+            0%{
+              transform: rotateY(0deg);
+              box-shadow:0 0px 100px rgb(1, 253, 127);
+            }
+            100%{
+              transform: rotateY(360deg);
+              box-shadow: none;
+            }
+          }
+        }
+        /* STAR 4 HEADER*/
+        header .ImgToolsPCStars:nth-of-type(4){
+          animation-delay: 1s;
+          @keyframes star1{
+            0%{
+              transform: rotateY(0deg);
+              box-shadow:0 0px 100px rgb(47, 128, 0);
+            }
+            100%{
+              transform: rotateY(360deg);
+              box-shadow: none;
+            }
+          }
+        }
+        /* STAR 5 HEADER */
+        header .ImgToolsPCStars:nth-of-type(5){
+          animation-delay: 1.25s;
+          @keyframes star1{
+            0%{
+              transform: rotateY(0deg);
+              box-shadow:0 0px 100px rgb(105, 128, 0);
+            }
+            100%{
+              transform: rotateY(360deg);
+              box-shadow: none;
+            }
+          }
+        }
+
 
 header .spanToolsMarg {
       margin: 0px 0 0 60%;
@@ -536,7 +626,7 @@ header .spanToolsMarg {
     margin-top: 1x;
     margin-left: 0px;
 
-    animation-name: girar;
+    animation-name: girarsocialmediaheader;
     animation-duration: 7s;
     animation-iteration-count: infinite;
 
@@ -557,7 +647,7 @@ header .spanToolsMarg {
     margin-top: 7x;
     margin-left: 10px;
 
-    animation-name: girar;
+    animation-name: girarsocialmediaheader;
     animation-duration: 7s;
     animation-iteration-count: infinite;
   }
@@ -577,12 +667,12 @@ header .spanToolsMarg {
     margin-top: -2px;
     margin-left: 100px;
 
-    animation-name: girar;
+    animation-name: girarsocialmediaheader;
     animation-duration: 7s;
     animation-iteration-count: infinite;
   }
 
-  @keyframes girar {
+  @keyframes girarsocialmediaheader {
     0%{rotate:  calc(60deg);  margin-left:5%;  box-shadow: 0 0 50px rgb(255, 0, 255); border: 1px solid purple; }
     1%{rotate:  calc(55deg);  margin-left:10%; box-shadow: 0 0 50px rgb(212, 0, 255);}
     2%{rotate:  calc(50deg);  margin-left:15%; box-shadow: 0 0 50px rgb(162, 0, 255);}
