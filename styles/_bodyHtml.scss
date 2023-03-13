@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{
+  margin: 0 15% 0 15%;
+  background-color: #221000;
+  box-shadow: 0 0 1000px purple;
+  
+  width: 85%;
+  background-image:url("../img/developer_body_backg.jpg.png");
+  background-repeat: no-repeat;
+  background-size: content;
+  background-position: center; 
+  z-index: -100;
+}
+    
+
+body:hover{
+  background-color: black;
+  opacity: 0.9;
+  transition: 500ms;
+}
+
+
+html{
+  color: white;
+  height: 100%;
+}
+

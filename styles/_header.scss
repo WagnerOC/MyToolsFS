@@ -1,13 +1,23 @@
 
 
-body{
-  margin: 0 15% 0 15%;
-  background-color: #223;
-  box-shadow: 0 0 1000px purple;
-}
 
-html{
-  color: white;
+
+/* HEADER */
+
+
+main{
+  box-shadow: 0 0 300px 1px rgb(128, 126, 0); 
+  animation-name: mainlight;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  @keyframes mainlight{
+    0%  {box-shadow: 0 0 300px 1px rgb(0, 128, 128);};
+    10% {box-shadow: 0 0 300px 1px rgb(0, 128, 128); };
+    40% {box-shadow: 0 0 300px 1px rgb(0, 34, 128); };
+    60% {box-shadow: 0 0 300px 1px rgb(0, 70, 128); };
+    70% {box-shadow: 0 0 300px 1px rgb(0, 128, 107); };
+    100%{box-shadow: 0 0 300px 1px rgb(0, 128, 128); };
+  }
 }
 
 header{   
@@ -24,6 +34,7 @@ header{
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
     transition: 1s;
+
   }
 
       @keyframes lightHeader{
@@ -58,6 +69,7 @@ header .toolLogoImg{          /* Img Engrenagem */
         95% {margin-top: 3%;}
         100%{margin-top: 3%;rotate:calc(355deg);border-radius: 50%;}
       }
+      
 
 
 /* Spans */
@@ -511,7 +523,7 @@ header .spanToolsMarg {
 
   /* GITHUB */
   a.tooltip:hover span.github {
-    background-image: url("./img/github.png");
+    background-image: url("../img/github.png");
     background-position: center center;
     background-size: contain; /* <------ */
     background-repeat: no-repeat;
@@ -532,7 +544,7 @@ header .spanToolsMarg {
   }
   /* Netlify*/
   a.tooltip:hover span.netlify {
-    background-image: url("./img/netlify.png");
+    background-image: url("../img/netlify.png");
     background-position: center center;
     background-size: contain; /* <------ */
     background-repeat: no-repeat;
@@ -551,7 +563,7 @@ header .spanToolsMarg {
   }
   /* Linkedin */
   a.tooltip:hover span.linkedin {
-    background-image: url("./img/linkedin.png");
+    background-image: url("../img/linkedin.png");
     background-position: center center;
     background-size: contain; /* <------ */
     background-repeat: no-repeat;

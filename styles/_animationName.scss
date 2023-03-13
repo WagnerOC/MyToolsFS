@@ -1,0 +1,143 @@
+
+
+
+
+/* Animantion Name  |  Lateral Esquerda  |  Trabalhar junto ao infoDev */
+
+
+    /* Name Span*/   
+    .caixaDevStudent .name span{
+      font-size: 20px;
+      animation-name: namelight;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.50s;
+  }
+
+
+  .caixaDevStudent .name span:nth-of-type(1){
+      font-family: 'Stick No Bills', sans-serif;
+      font-size: 25px;
+      animation-name: namelight;
+      animation-duration: 500ms;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0.50s;
+        @keyframes namelight{
+          0%{
+            color: white;
+            text-shadow: 
+            0 0 12px rgb(28, 0, 128),
+            0 0 50px rgb(0, 51, 128),
+            0 0 100px rgb(128, 0, 21)
+          }
+          10%{text-shadow: none;
+          }
+          100%{text-shadow: none;}
+        }
+  }
+  .caixaDevStudent .name span:nth-of-type(2){
+    font-family: 'Literata', serif;
+    animation-name: namelight;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.50s;
+      @keyframes namelight{
+        0%{
+          color: white;
+          text-shadow: 
+          0 0 12px purple,
+          0 0 50px purple,
+          0 0 100px purple
+          
+        }
+        10%{text-shadow: none;
+        }
+        100%{text-shadow: none;}
+      }
+}
+
+
+
+.caixaDevStudent .name span:nth-of-type(3){
+  font-family: 'Literata', serif;
+  animation-name: namelight;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.50s;
+    @keyframes namelight{
+      0%{
+        color: white;
+        text-shadow: 
+        0 0 12px purple,
+        0 0 50px purple,
+        0 0 100px purple
+      }
+      10%{text-shadow: none;
+      }
+      100%{text-shadow: none;}
+    }
+}
+.caixaDevStudent .name span:nth-of-type(4){
+font-family: 'Literata', serif;
+animation-name: namelight;
+animation-duration: 5s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-delay: 0.50s;
+  @keyframes namelight{
+    0%{
+      color: white;
+      text-shadow: 
+      0 0 12px purple,
+      0 0 50px purple,
+      0 0 100px purple
+    }
+    10%{text-shadow: none;font-family: none;}
+    100%{text-shadow: none;}
+  }
+}
+.caixaDevStudent .name span:nth-of-type(5){
+font-family: 'Literata', serif;
+animation-name: namelight;
+animation-duration: 5s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-delay: 0.50s;
+  @keyframes namelight{
+    0%{
+      color: white;
+      text-shadow: 
+      0 0 12px purple,
+      0 0 50px purple,
+      0 0 100px purple
+    }
+    10%{text-shadow: none;
+    }
+    100%{text-shadow: none;}
+  }
+}
+.caixaDevStudent .name span:nth-of-type(6){
+font-family: 'Stick No Bills', sans-serif;
+font-size: 23px;
+animation-name: namelight;
+animation-duration: 5s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-delay: 0.50s;
+  @keyframes namelight{
+    0%{
+      color: white;
+      text-shadow: 
+      0 0 12px purple,
+      0 0 50px purple,
+      0 0 100px purple
+    }
+    10%{text-shadow: none;
+    }
+    100%{text-shadow: none;}
+  }
+}

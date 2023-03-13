@@ -1,0 +1,175 @@
+
+
+
+
+/* Section  | Toda a Caixa Lateral Esquerda   |  Informações do Desenvolvedor */
+
+
+
+    .caixaDevStudent{
+      position: absolute;
+      display: inline-block;  
+      max-width:14%;
+      height: 1300px;
+      margin: 35px 0 0 0;
+      text-align: center;
+      border-radius: 10px;
+      background-color: rgba(44, 13, 182, 0.418);
+      padding: 15px 20px 20px 20px;
+      letter-spacing: 3px;
+      line-height: 28px;
+      border: 1px solid rgba(255, 167, 4, 0.212);
+      box-shadow: 0 0 100px 0  #fff;
+      animation-name: borderCaixaStudent;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+        @keyframes borderCaixaStudent{
+          0%  {box-shadow: 0 0 30px 0  #fff;}
+          10% {box-shadow: none;}
+          30% {box-shadow: 0 0 40px 0  #ff4800;}
+          40% {box-shadow: none}
+          50% {box-shadow: 0 0 40px 0  #ad9898;} 
+          60% {box-shadow: none} 
+          70% {box-shadow: 0 0 40px 0  #ffda0a;}
+          90% {box-shadow: none}
+          100%{box-shadow: 0 0 30px 0  #fff;}
+          }
+
+
+    /* IMG Desenvolvedor*/
+   .imgDoDesenvolvedor{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+  }
+  
+  .caixaImg{
+    position: relative;
+    background-image: url(../img/img_wagner3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height:150px;
+    margin-left: 20%;
+    margin-top: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .caixaImg::before, .caixaImg::after{
+    content:'';
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(45deg,#FFFF00,#00FF00,
+    #0099FF,#001AFF,#A200FF,#FF0055,#FF0000,
+    #FFFF00,#00FF00,#0099FF,#001AFF,#A200FF);
+    background-size: 300%;
+    animation: animarborda 8s linear alternate infinite;
+  }
+
+  @keyframes  animarborda{
+    0%{background-position: 0;}
+    100%{background-position: 300%;}
+  }
+
+  .caixaImg::after{
+     filter: blur(50px);
+  }
+
+  
+    .caixaDevStudent .myDescription{
+      color: rgb(140, 245, 219);
+      text-shadow: 1px 2px 5px #0004ff;
+      line-height: 22px;
+      font-family: 'Bitter', serif;
+      padding: 10px;
+      margin-top: 35px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      border: 1px solid #888888;
+      border-radius: 5px;
+      box-shadow: 0 0 5px 0px #fff;
+      line-height: 24px;
+    }
+
+    .caixaDevStudent .ulSkills{
+      padding: 10px 0 10px 0;
+      font-family: 'Climate Crisis', cursive;
+      font-size: 16px;
+      color: #019b01;
+      text-shadow: 1px 1px 20px orange;
+      text-align: center;
+      margin: 5px 0 0px 0;
+      list-style-type: none;
+      border: 1px solid #888;
+      border-radius: 5px;
+      box-shadow: 0 0 5px 0px #fff;
+    }
+
+        .caixaDevStudent .liSkills{
+          text-align: justify;
+          margin-left: 17%;
+          padding: 2px 0 2px 0;
+          width: 100%;
+        }
+
+        .caixaDevStudent .liSkills:nth-of-type(1){
+          margin-left: 17%;
+          margin-top: 10px;
+        }
+
+        .liSkills img{       /* Imagens das Skills Ex: Html5 ..*/
+          margin-left: 1%;
+          width: 60%;
+          height: 30px;
+        }
+
+
+    .liSkills::before{
+      content:'';
+      position: absolute;
+      z-index: -1;
+      border-radius: 0;
+      margin: -3px 0 0 0;
+      width: calc(50% + 10px);
+      height: calc(2% + 10px);
+      background: linear-gradient(45deg,#FFFF00,#00FF00,
+      #0099FF,#001AFF,#A200FF,#FF0055,#FF0000,
+      #FFFF00,#00FF00,#0099FF,#001AFF,#A200FF);
+      background-size: 300%;
+      animation: animarborda2 5s linear alternate infinite;
+    }
+  
+        @keyframes  animarborda2{
+          0%{background-position: 0;}
+          100%{background-position: 300%;}
+        }
+    
+        .liSkills::after{
+          filter: blur(50px);
+        }
+
+    .caixaDevStudent .contato{
+      margin-top: 20px;
+      margin-bottom: 10px;     
+    }
+
+    .caixaBlink182Musics{
+      margin: 20px 0 0 0;
+    }
+    
+    .caixaBlink182Musics h2{
+      color: orangered;
+      margin-bottom: 15px;
+    }
+
+   

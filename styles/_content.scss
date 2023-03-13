@@ -1,445 +1,51 @@
-section{
-  max-width:100% ;
-  height: 100vh;
-  background-color: #acac9b13;
-  margin: 35px 0 0 0;
+.index{
+  width: 70px;
+  height: 30px;
+  color: orange;
+  font-size: 28px;
+  padding: 10px;
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid green;
   border-radius: 10px;
-  padding: 2%;
-  border: 1x solid #00000000;
-  box-shadow: 0 0 100px 1px purple;
+  position: absolute;
+  margin-left: -200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
-    /* IMG Desenvolvedor*/
-   .imgDoDesenvolvedor{
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-    }
-    
-    .caixaImg{
-      position: relative;
-      background-image: url(../img/Wagner.jpg);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 150px;
-      height:150px;  
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
 
-    .caixaImg::before, .caixaImg::after{
-      content:'';
-      position: absolute;
-      z-index: -1;
-      border-radius: 50%;
-      width: calc(100% + 10px);
-      height: calc(100% + 10px);
-      background: linear-gradient(45deg,#FFFF00,#00FF00,
-      #0099FF,#001AFF,#A200FF,#FF0055,#FF0000,
-      #FFFF00,#00FF00,#0099FF,#001AFF,#A200FF);
-      background-size: 300%;
-      animation: animarborda 8s linear alternate infinite;
-    }
 
-    @keyframes  animarborda{
-      0%{background-position: 0;}
-      100%{background-position: 300%;}
-    }
 
-    .caixaImg::after{
-       filter: blur(50px);
-    }
+/*Caixa dos Conteúdos | My Tools | Cursos | Tools */
 
-    .caixaDevStudent{
-      margin: 20px 0 0 10px;
-      background-color: rgba(255, 0, 0, 0.144);
-      display: inline-block;
-      text-align: center;
-      border-radius: 10px;
-      padding: 15px 20px 20px 20px;
-      letter-spacing: 3px;
-      line-height: 28px;
-      
-      
-    }
- 
-    /* Dev Span*/
-    .caixaDevStudent .dev{
-      margin-top: 20px;
-      font-family: 'Black Ops One', cursive;
-      
-    }
-
-     .caixaDevStudent .dev span:nth-of-type(1){   
-        font-size: 22px;  
-        animation-name: devlight;
-        animation-duration: 5s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-delay: 0.25s; 
-          @keyframes devlight{
-            0%{
-              color: rgb(10, 125, 202);
-              text-shadow: 
-              0 0 12px rgb(128, 115, 0),
-              0 0 50px rgba(15, 11, 250, 0.534),
-              0 0 100px rgb(255, 239, 15)
-            }
-            10%{text-shadow: none;
-            }
-            100%{text-shadow: none;}
-          }
-      }
-
-      .caixaDevStudent .dev span:nth-of-type(2){   
-        animation-name: devlight;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-delay: 0.50s; 
-          @keyframes devlight{
-            0%{
-              color: rgb(53, 180, 218);
-              text-shadow: 
-              0 0 12px purple,
-              0 0 50px purple,
-              0 0 100px purple
-            }
-            10%{text-shadow: none;
-            }
-            100%{text-shadow: none;}
-          }
-      }
-
-      .caixaDevStudent .dev span:nth-of-type(3){  
-        font-size: 22px; 
-        animation-name: devlight;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-delay: 0.75s;
-          @keyframes devlight{
-            0%{
-              color: rgb(53, 218, 196);
-              text-shadow: 
-              0 0 12px purple,
-              0 0 50px purple,
-              0 0 100px purple
-            }
-            10%{text-shadow: none;
-            }
-            100%{text-shadow: none;}
-          }
-      }
-
-      
-
-    /* Cargo Span*/
-    
-    .caixaDevStudent .cargo span:nth-of-type(1){
-        font-family: 'Stick No Bills', sans-serif;
-        font-size: 25px;
-        animation-name: cargolight;
-        animation-duration: 5s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-delay: 0.25s; 
-            @keyframes cargolight{
-              0%{
-                color: white;
-                text-shadow: 
-                0 0 12px purple,
-                0 0 50px purple,
-                0 0 100px purple
-              }
-              10%{text-shadow: none;
-              }
-              100%{text-shadow: none;}
-            }
-     }
-
-     .caixaDevStudent .cargo span:nth-of-type(2){
-      font-family: 'Literata', serif;
-      animation-name: cargolight;
-      animation-duration: 5s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-delay: 0.25s; 
-          @keyframes cargolight{
-            0%{
-              color: white;
-              text-shadow: 
-              0 0 12px purple,
-              0 0 50px purple,
-              0 0 100px purple
-            }
-            10%{text-shadow: none;
-            }
-            100%{text-shadow: none;}
-          }
-    }
-
-    .caixaDevStudent .cargo span:nth-of-type(3){
-      font-family: 'Literata', serif;
-      animation-name: cargolight;
-      animation-duration: 5s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-delay: 0.25s; 
-          @keyframes cargolight{
-            0%{
-              color: white;
-              text-shadow: 
-              0 0 12px purple,
-              0 0 50px purple,
-              0 0 100px purple
-            }
-            10%{text-shadow: none;
-            }
-            100%{text-shadow: none;}
-          }
-    }
-
-    .caixaDevStudent .cargo span:nth-of-type(4){
-      font-family: 'Literata', serif;
-      animation-name: cargolight;
-      animation-duration: 5s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-delay: 0.25s; 
-          @keyframes cargolight{
-            0%{
-              color: white;
-              text-shadow: 
-              0 0 12px purple,
-              0 0 50px purple,
-              0 0 100px purple
-            }
-            10%{text-shadow: none;
-            }
-            100%{text-shadow: none;}
-          }
-    }
-
-    .caixaDevStudent .cargo span:nth-of-type(5){
-      font-family: 'Literata', serif;
-      animation-name: cargolight;
-      animation-duration: 5s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-delay: 0.25s; 
-          @keyframes cargolight{
-            0%{
-              color: white;
-              text-shadow: 
-              0 0 12px purple,
-              0 0 50px purple,
-              0 0 100px purple
-            }
-            10%{text-shadow: none;
-            }
-            100%{text-shadow: none;}
-          }
-    }
-
-    .caixaDevStudent .cargo span:nth-of-type(6){
-      font-family: 'Literata', serif;
-      animation-name: cargolight;
-      animation-duration: 5s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-delay: 0.25s; 
-          @keyframes cargolight{
-            0%{
-              color: white;
-              text-shadow: 
-              0 0 12px purple,
-              0 0 50px purple,
-              0 0 100px purple
-            }
-            10%{text-shadow: none;
-            }
-            100%{text-shadow: none;}
-          }
-    }
-
-    .caixaDevStudent .cargo span:nth-of-type(7){
-      font-family: 'Stick No Bills', sans-serif;
-      font-size: 23px;
-      animation-name: cargolight;
-      animation-duration: 5s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-delay: 0.90s; 
-          @keyframes cargolight{
-            0%{
-              color: white;
-              text-shadow: 
-              0 0 12px purple,
-              0 0 50px purple,
-              0 0 100px purple
-            }
-            10%{text-shadow: none;
-            }
-            100%{text-shadow: none;}
-          }
-    }
-    
-
-    /* Name Span*/
-    .caixaDevStudent .name span{
-        font-size: 20px;
-        animation-name: namelight;
-        animation-duration: 1s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-delay: 0.50s;
-    }
-  
-
-    .caixaDevStudent .name span:nth-of-type(1){
-        font-family: 'Stick No Bills', sans-serif;
-        font-size: 25px;
-        animation-name: namelight;
-        animation-duration: 1s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-delay: 0.50s;
-          @keyframes namelight{
-            0%{
-              color: white;
-              text-shadow: 
-              0 0 12px purple,
-              0 0 50px purple,
-              0 0 100px purple
-            }
-            10%{text-shadow: none;
-            }
-            100%{text-shadow: none;}
-          }
-    }
-    .caixaDevStudent .name span:nth-of-type(2){
-      font-family: 'Literata', serif;
-      animation-name: namelight;
-      animation-duration: 5s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-delay: 0.50s;
-        @keyframes namelight{
-          0%{
-            color: white;
-            text-shadow: 
-            0 0 12px purple,
-            0 0 50px purple,
-            0 0 100px purple
-            
-          }
-          10%{text-shadow: none;
-          }
-          100%{text-shadow: none;}
-        }
-  }
-
-  
-
-  .caixaDevStudent .name span:nth-of-type(3){
-    font-family: 'Literata', serif;
-    animation-name: namelight;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 0.50s;
-      @keyframes namelight{
-        0%{
-          color: white;
-          text-shadow: 
-          0 0 12px purple,
-          0 0 50px purple,
-          0 0 100px purple
-        }
-        10%{text-shadow: none;
-        }
-        100%{text-shadow: none;}
-      }
-}
-.caixaDevStudent .name span:nth-of-type(4){
-  font-family: 'Literata', serif;
-  animation-name: namelight;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: 0.50s;
-    @keyframes namelight{
-      0%{
-        color: white;
-        text-shadow: 
-        0 0 12px purple,
-        0 0 50px purple,
-        0 0 100px purple
-      }
-      10%{text-shadow: none;font-family: none;}
-      100%{text-shadow: none;}
-    }
-}
-.caixaDevStudent .name span:nth-of-type(5){
-  font-family: 'Literata', serif;
-  animation-name: namelight;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: 0.50s;
-    @keyframes namelight{
-      0%{
-        color: white;
-        text-shadow: 
-        0 0 12px purple,
-        0 0 50px purple,
-        0 0 100px purple
-      }
-      10%{text-shadow: none;
-      }
-      100%{text-shadow: none;}
-    }
-}
-.caixaDevStudent .name span:nth-of-type(6){
-  font-family: 'Stick No Bills', sans-serif;
-  font-size: 23px;
-  animation-name: namelight;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-delay: 0.50s;
-    @keyframes namelight{
-      0%{
-        color: white;
-        text-shadow: 
-        0 0 12px purple,
-        0 0 50px purple,
-        0 0 100px purple
-      }
-      10%{text-shadow: none;
-      }
-      100%{text-shadow: none;}
-    }
+.caixaDeConteudos{
+  position: absolute;
+  display: grid;
+  grid-auto-flow: row;
+  width: 40%;
+  height: 100vh;
+  margin: 35px 0 0 26%;
+  border-radius: 10px;
+  background-color: red;
 }
 
-.caixaMyTools1{
-  display: flex;
-  float: left;
-}
 
-.titulocontentMyTools{
-  margin-left: 50%;
-}
-
-section a{
+.caixaDeConteudos a{
   color: orange;
   text-decoration: none;
 }
-section ul{
+.caixaDeConteudos ul{
   color: lightskyblue;
   list-style-type: none;
 }
+
+.titulocontentMyTools{
+  text-align: center;
+}
+
+
+.caixaDeConteudos .titulocontentMyTools{
+  margin-left: 50%;
+}
+

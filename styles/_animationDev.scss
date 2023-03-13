@@ -1,0 +1,75 @@
+
+
+
+
+/* Animation Dev |  Trabalhar junto ao InfoDev  | Lateral Esquerda  */
+
+
+/* Dev Span*/
+.caixaDevStudent .dev{
+  margin-top: 35px;
+  font-family: 'Black Ops One', cursive;
+  
+}
+
+ .caixaDevStudent .dev span:nth-of-type(1){   
+    font-size: 22px;  
+    animation-name: devlight;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.25s; 
+      @keyframes devlight{
+        0%{
+          color: rgb(10, 125, 202);
+          text-shadow: 
+          0 0 12px rgb(128, 115, 0),
+          0 0 50px rgba(15, 11, 250, 0.534),
+          0 0 100px rgb(255, 239, 15)
+        }
+        10%{text-shadow: none;
+        }
+        100%{text-shadow: none;}
+      }
+  }
+
+  .caixaDevStudent .dev span:nth-of-type(2){   
+    animation-name: devlight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.50s; 
+      @keyframes devlight{
+        0%{
+          color: rgb(53, 180, 218);
+          text-shadow: 
+          0 0 12px purple,
+          0 0 50px purple,
+          0 0 100px purple
+        }
+        10%{text-shadow: none;
+        }
+        100%{text-shadow: none;}
+      }
+  }
+
+  .caixaDevStudent .dev span:nth-of-type(3){  
+    font-size: 22px; 
+    animation-name: devlight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.75s;
+      @keyframes devlight{
+        0%{
+          color: rgb(53, 218, 196);
+          text-shadow: 
+          0 0 12px purple,
+          0 0 50px purple,
+          0 0 100px purple
+        }
+        10%{text-shadow: none;
+        }
+        100%{text-shadow: none;}
+      }
+  }
