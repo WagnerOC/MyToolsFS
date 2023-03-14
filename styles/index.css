@@ -1780,15 +1780,53 @@ header .spanToolsMarg header .spanToolsMarg span:nth-of-type(6) {
 }
 
 /*Caixa dos Conteúdos | My Tools | Cursos | Tools */
+/* 
+H1 H2 UL --> Defini direto na tag pra todos da página
+Defini direto no arquivo _bodyHtml.scss
+*/
 .caixaDeConteudos {
   height: 196vh;
   margin: 50px 0 0 24%;
   border-radius: 10px;
-  background-color: rgb(221, 221, 193); /* rgb(223, 223, 131); */
+  background-color: rgba(221, 221, 193, 0.089); /* rgb(223, 223, 131); */
   box-sizing: border-box;
   padding: 50px 20px;
+  animation-name: caixadeconteudo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  z-index: 100;
+}
+@keyframes caixadeconteudo {
+  0% {
+    box-shadow: 0 0 30px 0 #fff;
+  }
+  10% {
+    box-shadow: none;
+  }
+  30% {
+    box-shadow: 0 0 40px 0 #ff4800;
+  }
+  40% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 40px 0 #ad9898;
+  }
+  60% {
+    box-shadow: none;
+  }
+  70% {
+    box-shadow: 0 0 40px 0 #ffda0a;
+  }
+  90% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0 0 30px 0 #fff;
+  }
 }
 
+/* Caixa como um todo */
 .caixaAllTools {
   padding: 20px;
   margin-top: 10px;
@@ -1798,17 +1836,18 @@ header .spanToolsMarg header .spanToolsMarg span:nth-of-type(6) {
   gap: 50px;
 }
 
+/* Cada Caixa de Tools | Freelancer Area | Docum.. */
 .displayFlexTools {
   text-align: center;
   padding: 10px 20px 15px 10px;
   box-shadow: 0 0 10px darkred;
-  border: 1px solid #777;
+  border: 1px solid rgba(119, 119, 119, 0.1843137255);
   border-radius: 8px;
 }
 
 .displayFlexTools:hover {
   animation-name: caixaAllToolsanima;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   cursor: pointer;
 }
@@ -1824,6 +1863,7 @@ header .spanToolsMarg header .spanToolsMarg span:nth-of-type(6) {
   }
 }
 
+/* Colunas dentro de cada Caixa de Tools */
 .ulgridAllTools {
   margin-top: 20px;
   display: grid;
@@ -1831,19 +1871,20 @@ header .spanToolsMarg header .spanToolsMarg span:nth-of-type(6) {
   gap: 50px;
 }
 
+/* Li´s | Workana.. W3Scholls .. Google fonts .. */
 .caixaAllTools li {
   font-style: italic;
   font-size: 20px;
   font-weight: bolder;
+  text-align: center;
   line-height: 35px;
   letter-spacing: 6px;
+  box-shadow: 0 0 20px rgb(10, 1, 1);
   background-color: rgb(218, 178, 46);
   width: 100%;
-  text-align: center;
   margin-top: 10px;
   padding: 6px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgb(10, 1, 1);
 }
 
 .caixaAllTools li:hover {
@@ -1865,10 +1906,21 @@ header .spanToolsMarg header .spanToolsMarg span:nth-of-type(6) {
   }
 }
 
+/* Links nas Li´s  */
 .caixaAllTools a {
   color: rgb(76, 0, 255);
   text-decoration: none;
   font-family: "Spectral SC", serif;
+}
+
+/* Cursos e Certificados */
+.caixaCursosCertificados {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.cursos {
+  background-color: red;
 }
 
 /*
@@ -3081,15 +3133,16 @@ extenso o cód
   margin: 30px 0 10px 0;
 }
 
-.caixaTituloMusics h2 {
+.caixaTituloMusics > h2 {
   color: rgb(255, 196, 0);
   margin-bottom: 15px;
+  font-size: 20px;
 }
 
 .iframeMusicCaixa {
   border-radius: 10px;
   width: 100%;
-  height: 90px;
+  height: 85px;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -3133,7 +3186,7 @@ a.tooltip:hover span.spanHtmlAnimation {
   rotate: 0deg;
   margin-top: -2px;
   margin-left: 100px;
-  animation-name: girar;
+  animation-name: girarsocial;
   animation-duration: 7s;
   animation-iteration-count: infinite;
 }
@@ -3151,7 +3204,7 @@ a.tooltip:hover span.spanCssAnimation {
   rotate: 0deg;
   margin-top: -2px;
   margin-left: 100px;
-  animation-name: girar;
+  animation-name: girarsocial;
   animation-duration: 7s;
   animation-iteration-count: infinite;
 }
@@ -3169,7 +3222,7 @@ a.tooltip:hover span.spanJavaSAnimation {
   rotate: 0deg;
   margin-top: -2px;
   margin-left: 100px;
-  animation-name: girar;
+  animation-name: girarsocial;
   animation-duration: 7s;
   animation-iteration-count: infinite;
 }
@@ -3187,7 +3240,7 @@ a.tooltip:hover span.spanRubyAnimation {
   rotate: 0deg;
   margin-top: -2px;
   margin-left: 100px;
-  animation-name: girar;
+  animation-name: girarsocial;
   animation-duration: 7s;
   animation-iteration-count: infinite;
 }
@@ -3205,7 +3258,7 @@ a.tooltip:hover span.spanGmailAnimation {
   rotate: 0deg;
   margin-top: -2px;
   margin-left: 100px;
-  animation-name: girar;
+  animation-name: girarsocial;
   animation-duration: 7s;
   animation-iteration-count: infinite;
 }
@@ -3223,12 +3276,12 @@ a.tooltip:hover span.spanWhatsappAnimation {
   rotate: 0deg;
   margin-top: -2px;
   margin-left: 100px;
-  animation-name: girar;
+  animation-name: girarsocial;
   animation-duration: 7s;
   animation-iteration-count: infinite;
 }
 
-@keyframes girar {
+@keyframes girarsocial {
   0% {
     rotate: 60deg;
     margin-left: 10%;
@@ -3773,7 +3826,6 @@ a.tooltip span {
 
 body {
   margin: 0 15% 0 15%;
-  box-shadow: 0 0 1000px purple;
   width: 70%;
   background-image: url("../img/developer_body_backg.jpg.png");
   background-repeat: repeat-y;
@@ -3784,6 +3836,24 @@ body {
 body:hover {
   background-color: black;
   transition: 500ms;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  z-index: 10000;
+}
+
+.banner video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 350%;
+  z-index: -10000;
 }
 
 html {

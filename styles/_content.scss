@@ -15,21 +15,40 @@
 }
 
 
-
-
 /*Caixa dos Conteúdos | My Tools | Cursos | Tools */
+
+/* 
+H1 H2 UL --> Defini direto na tag pra todos da página
+Defini direto no arquivo _bodyHtml.scss
+*/
 
 .caixaDeConteudos{ 
   height: 196vh;
   margin: 50px 0 0 24%;
   border-radius: 10px;
-  background-color: rgb(221, 221, 193); /* rgb(223, 223, 131); */
+  background-color: rgba(221, 221, 193, 0.089); /* rgb(223, 223, 131); */
   box-sizing: border-box;
   
   padding: 50px 20px;
 
+  animation-name: caixadeconteudo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  z-index: 100;
+  @keyframes caixadeconteudo{
+          0%  {box-shadow: 0 0 30px 0  #fff;}
+          10% {box-shadow: none;}
+          30% {box-shadow: 0 0 40px 0  #ff4800;}
+          40% {box-shadow: none}
+          50% {box-shadow: 0 0 40px 0  #ad9898;} 
+          60% {box-shadow: none} 
+          70% {box-shadow: 0 0 40px 0  #ffda0a;}
+          90% {box-shadow: none}
+          100%{box-shadow: 0 0 30px 0  #fff;}
+  }
 }
 
+/* Caixa como um todo */
 .caixaAllTools{
   padding: 20px;
   margin-top: 10px;
@@ -40,18 +59,18 @@
   
 }
 
-
+/* Cada Caixa de Tools | Freelancer Area | Docum.. */
 .displayFlexTools{
   text-align: center;
   padding: 10px 20px 15px 10px;
   box-shadow: 0 0 10px darkred;
-  border: 1px solid #777 ;
+  border: 1px solid #7777772f ;
   border-radius: 8px;
 }
 
 .displayFlexTools:hover{
   animation-name: caixaAllToolsanima;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   cursor: pointer;
   @keyframes caixaAllToolsanima{
@@ -67,7 +86,7 @@
   }
 }
 
-
+/* Colunas dentro de cada Caixa de Tools */
 .ulgridAllTools{
   margin-top: 20px;
   display: grid;
@@ -76,19 +95,24 @@
 
 }
 
+/* Li´s | Workana.. W3Scholls .. Google fonts .. */
 .caixaAllTools li{
   font-style: italic;
   font-size: 20px;
   font-weight: bolder;
+  text-align: center;
+
   line-height: 35px;
   letter-spacing: 6px;
+
+  box-shadow: 0 0 20px rgb(10, 1, 1);
   background-color: rgb(218, 178, 46);
+  
   width: 100%;
-  text-align: center;
   margin-top: 10px;
   padding: 6px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgb(10, 1, 1);
+  
 }
 .caixaAllTools li:hover{
   background-color: rgba(218, 178, 46,0.8);
@@ -110,12 +134,23 @@
   }
 }
 
+/* Links nas Li´s  */
 .caixaAllTools a{
   color: rgb(76, 0, 255);
   text-decoration: none; 
   font-family: 'Spectral SC', serif; 
 }
 
+
+/* Cursos e Certificados */
+.caixaCursosCertificados{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.cursos{
+  background-color: red;
+}
 
 
 

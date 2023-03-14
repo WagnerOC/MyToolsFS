@@ -6,8 +6,6 @@
 
 body{
   margin: 0 15% 0 15%;
-  
-  box-shadow: 0 0 1000px purple;
   width: 70%;
   background-image:url("../img/developer_body_backg.jpg.png");
   background-repeat: repeat-y;
@@ -15,11 +13,30 @@ body{
   background-position: center; 
 }
     
-
 body:hover{
   background-color: black;
   transition: 500ms;
 }
+
+.banner{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  
+  z-index: 10000;
+  
+}
+
+.banner video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 350%;
+  z-index: -10000;
+}
+
 
 
 html{
