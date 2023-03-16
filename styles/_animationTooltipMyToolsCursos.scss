@@ -1,0 +1,280 @@
+
+
+/* ANIMATIONS ---> MY TOOLS | COURSES | MY CERTIFICATIONS ... CAIXA DE CONTEUDOS*/
+
+/* Animation Workana */
+a.tooltip:hover span.spanWorkanaImgAnimation {
+  background-image: url("../img/workana_logo.png");
+  background-position: center center;
+  background-size: contain; /* <------ */
+  background-repeat: no-repeat;
+  
+
+  border-radius: 50%;
+  color: #eee;
+  display: inline;
+  position: absolute;
+  rotate:calc(0deg) ;
+  margin-top: -2px;
+  margin-left: 100px;
+
+  animation-name: girarmytoolscursos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+
+/* Animation Freelancer */
+a.tooltip:hover span.spanFreelancerImgAnimation {
+  background-image: url("../img/freelancer.png");
+  background-position: center center;
+  background-size: contain; /* <------ */
+  background-repeat: no-repeat;
+  
+
+  border-radius: 50%;
+  color: #eee;
+  display: inline;
+  position: absolute;
+  rotate:calc(0deg) ;
+  margin-top: -2px;
+  margin-left: 100px;
+
+  animation-name: girarmytoolscursos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Animation 99 Freelas */
+a.tooltip:hover span.span99freelasImgAnimation {
+  background-image: url("https://drive.google.com/file/d/1_JvFHMhgerd9OhPzczIDG6EkXJKikRiF/view?usp=share_link");
+  background-position: center center;
+  background-size: contain; /* <------ */
+  background-repeat: no-repeat;
+  
+
+  border-radius: 50%;
+  color: #eee;
+  display: inline;
+  position: absolute;
+  rotate:calc(0deg) ;
+  margin-top: -2px;
+  margin-left: 100px;
+
+  animation-name: girarmytoolscursos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Animation Up Work */
+a.tooltip:hover span.spanUpWorkImgAnimation {
+  background-image: url("../img/upwork.png");
+  background-position: center center;
+  background-size: contain; /* <------ */
+  background-repeat: no-repeat;
+  
+
+  border-radius: 50%;
+  color: #eee;
+  display: inline;
+  position: absolute;
+  rotate:calc(0deg) ;
+  margin-top: -2px;
+  margin-left: 100px;
+
+  animation-name: girarmytoolscursos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Animation Scalable Path */
+a.tooltip:hover span.spanScalablePathImgAnimation {
+  background-image: url("../img/scalablepath.png");
+  background-position: center center;
+  background-size: contain; /* <------ */
+  background-repeat: no-repeat;
+  
+
+  border-radius: 50%;
+  color: #eee;
+  display: inline;
+  position: absolute;
+  rotate:calc(0deg) ;
+  margin-top: -2px;
+  margin-left: 100px;
+
+  animation-name: girarmytoolscursos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Animation Toptal */
+a.tooltip:hover span.spanToptalImgAnimation {
+  background-image: url("../img/toptal.png");
+  background-position: center center;
+  background-size: contain; /* <------ */
+  background-repeat: no-repeat;
+  
+
+  border-radius: 50%;
+  color: #eee;
+  display: inline;
+  position: absolute;
+  rotate:calc(0deg) ;
+  margin-top: -2px;
+  margin-left: 100px;
+
+  animation-name: girarmytoolscursos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+
+
+@keyframes girarmytoolscursos {
+  0%{rotate:  calc(3deg);  margin-left:10%; box-shadow: 0 0 50px rgb(255, 0, 255);}
+  1%{rotate:  calc(6deg);  margin-left:10%; box-shadow: 0 0 50px rgb(212, 0, 255);}
+  2%{rotate:  calc(9deg);  margin-left:10%; box-shadow: 0 0 50px rgb(162, 0, 255);}
+  3%{rotate:  calc(12deg);  margin-left:10%; box-shadow: 0 0 50px rgb(119, 0, 255);}
+  4%{rotate:  calc(15deg);  margin-left:10%; box-shadow: 0 0 50px rgb(89, 0, 255);}
+  5%{rotate:  calc(18deg);  margin-left:10%; box-shadow: 0 0 50px rgb(89, 0, 255);}
+  6%{rotate:  calc(21deg);  margin-left:10%; box-shadow: 0 0 50px rgb(55, 0, 255);}
+  7%{rotate:  calc(24deg);  margin-left:10%; box-shadow: 0 0 50px rgb(17, 0, 255);}
+  8%{rotate:  calc(27deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 17, 255);}
+  9%{rotate:  calc(30deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 38, 255);}
+  10%{rotate: calc(33deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 81, 255);}
+  11%{rotate: calc(36deg);   margin-left:10%; box-shadow: 0 0 50px rgb(0, 119, 255);}
+  12%{rotate: calc(39deg);   margin-left:10%; box-shadow: 0 0 50px rgb(0, 132, 255);}
+  13%{rotate: calc(42deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 153, 255);}
+  14%{rotate: calc(45deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 195, 255);}
+  15%{rotate: calc(48deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 247, 255);}
+  16%{rotate: calc(51deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 234);}
+  17%{rotate: calc(54deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 179);}
+  18%{rotate: calc(57deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 149);}
+  19%{rotate: calc(60deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 128);}
+  20%{rotate: calc(63deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 85);}
+  21%{rotate: calc(66deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 42);}
+  22%{rotate: calc(69deg); margin-left:10%; box-shadow: 0 0 50px rgb(9, 255, 0);}
+  23%{rotate: calc(72deg); margin-left:10%; box-shadow: 0 0 50px rgb(60, 255, 0);}
+  24%{rotate: calc(75deg); margin-left:10%; box-shadow: 0 0 50px rgb(123, 255, 0);}
+  25%{rotate: calc(78deg); margin-left:10%; box-shadow: 0 0 50px rgb(217, 255, 0);}
+  26%{rotate: calc(81deg); margin-left:10%; box-shadow: 0 0 50px rgb(255, 208, 0);}
+  27%{rotate: calc(85deg); margin-left:10%; box-shadow: 0 0 50px rgb(255, 174, 0);}
+  28%{rotate: calc(88deg); margin-left:10%; box-shadow: 0 0 50px rgb(255, 123, 0);}
+  29%{rotate: calc(91deg); margin-left:10%; box-shadow: 0 0 50px rgb(255, 102, 0);}
+  30%{rotate: calc(94deg); margin-left:10%; box-shadow: 0 0 50px rgb(255, 72, 0);}
+  31%{rotate: calc(97deg); margin-left:10%; box-shadow: 0 0 50px rgb(255, 38, 0);}
+  32%{rotate: calc(100deg); margin-left:10%; box-shadow: 0 0 50px rgb(255, 0, 0);}
+  33%{rotate: calc(103deg); margin-left:10%; box-shadow: 0 0 50px rgb(255, 38, 0);}
+  34%{rotate: calc(106deg); margin-left:10%; box-shadow: 0 0 50px rgb(255, 72, 0);}
+  35%{rotate: calc(109deg);  margin-left:10%; box-shadow: 0 0 50px rgb(255, 102, 0);}
+  36%{rotate: calc(112deg);   margin-left:10%; box-shadow: 0 0 50px rgb(255, 123, 0);}
+  37%{rotate: calc(115deg);   margin-left:10%; box-shadow: 0 0 50px rgb(255, 174, 0);}
+  38%{rotate: calc(118deg);  margin-left:10%; box-shadow: 0 0 50px rgb(255, 208, 0);}
+  39%{rotate: calc(121deg);  margin-left:10%; box-shadow: 0 0 50px rgb(217, 255, 0);}
+  40%{rotate: calc(124deg);  margin-left:10%; box-shadow: 0 0 50px rgb(123, 255, 0);}
+  41%{rotate: calc(127deg);  margin-left:10%; box-shadow: 0 0 50px rgb(60, 255, 0);}
+  42%{rotate: calc(130deg);  margin-left:10%; box-shadow: 0 0 50px rgb(9, 255, 0);}
+  43%{rotate: calc(133deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 42);}
+  44%{rotate: calc(136deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 85);}
+  45%{rotate: calc(139deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 128);}
+  46%{rotate: calc(142deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 149);}
+  47%{rotate: calc(145deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 179);}
+  48%{rotate: calc(148deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 234);}
+  49%{rotate: calc(151deg);  margin-left:10%;;box-shadow: 0 0 50px rgb(23, 211, 218);}
+  50%{rotate: calc(154deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 247, 255);}
+  51%{rotate: calc(158deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 195, 255);}
+  52%{rotate: calc(162deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 153, 255);}
+  53%{rotate: calc(166deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 132, 255);}
+  54%{rotate: calc(170deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 119, 255);}
+  55%{rotate: calc(174deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 81, 255);}
+  56%{rotate: calc(178deg);  margin-left:10%; box-shadow: 0 0 50px rgb(31, 58, 211);}
+  57%{rotate: calc(182deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 38, 255);}
+  58%{rotate: calc(186deg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 17, 255);}
+  59%{rotate: calc(190deg);   margin-left:10%; box-shadow: 0 0 50px rgb(29, 42, 226);}
+  60%{rotate: calc(194deg);   margin-left:10%; box-shadow: 0 0 50px rgb(55, 0, 255);}
+  61%{rotate: calc(198deg);  margin-left:10%; box-shadow: 0 0 50px rgb(89, 0, 255);}
+  62%{rotate: calc(202deg); margin-left:10%; box-shadow: 0 0 50px rgb(119, 0, 255);}
+  63%{rotate: calc(206deg); margin-left:10%; box-shadow: 0 0 50px rgb(162, 0, 255);}
+  64%{rotate: calc(210deg); margin-left:10%; box-shadow: 0 0 50px rgb(174, 0, 255);}
+  65%{rotate: calc(214deg); margin-left:10%; box-shadow: 0 0 50px rgb(212, 0, 255);}
+  66%{rotate: calc(218deg); margin-left:10%; box-shadow: 0 0 50px rgb(255, 0, 255);}
+  67%{rotate: calc(222deg); margin-left:10%; box-shadow: 0 0 50px rgb(212, 0, 255);}
+  68%{rotate: calc(226deg); margin-left:10%; box-shadow: 0 0 50px rgb(174, 0, 255);}
+  69%{rotate: calc(230deg); margin-left:10%; box-shadow: 0 0 50px rgb(162, 0, 255);}
+  70%{rotate: calc(234deg); margin-left:10%; box-shadow: 0 0 50px rgb(119, 0, 255);}
+  71%{rotate: calc(238deg); margin-left:10%; box-shadow: 0 0 50px rgb(89, 0, 255);}
+  72%{rotate: calc(242deg); margin-left:10%; box-shadow: 0 0 50px rgb(55, 0, 255);}
+  73%{rotate: calc(244deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 17, 255);}
+  74%{rotate: calc(248deg); margin-left:10%; box-shadow: 0 0 50px rgb(29, 42, 226);}
+  75%{rotate: calc(252deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 38, 255);}
+  76%{rotate: calc(256deg); margin-left:10%; box-shadow: 0 0 50px rgb(31, 58, 211);}
+  77%{rotate: calc(260deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 81, 255);}
+  78%{rotate: calc(264deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 119, 255);}
+  79%{rotate: calc(268deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 132, 255);}
+  80%{rotate: calc(272deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 153, 255);}
+  81%{rotate: calc(276deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 195, 255);}
+  82%{rotate: calc(280deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 247, 255);}
+  83%{rotate: calc(284deg); margin-left:10%; box-shadow: 0 0 50px rgb(23, 211, 218);}
+  84%{rotate: calc(288deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 234);}
+  85%{rotate: calc(292deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 179);}
+  86%{rotate: calc(296deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 149);}
+  87%{rotate: calc(300deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 128);}
+  88%{rotate: calc(304deg); margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 85);}
+  89%{rotate: calc(308eg);  margin-left:10%; box-shadow: 0 0 50px rgb(0, 255, 42);}
+  90%{rotate: calc(312deg);   margin-left:10%; box-shadow: 0 0 50px rgb(9, 255, 0);}
+  91%{rotate: calc(314deg);   margin-left:10%; box-shadow: 0 0 50px rgb(60, 255, 0);}
+  92%{rotate: calc(318deg);  margin-left:10%; box-shadow: 0 0 50px rgb(123, 255, 0);}
+  93%{rotate: calc(322deg);  margin-left:10%; box-shadow: 0 0 50px rgb(217, 255, 0);}
+  94%{rotate: calc(325deg);  margin-left:10%; box-shadow: 0 0 50px rgb(255, 208, 0);}
+  95%{rotate: calc(333deg);  margin-left:10%; box-shadow: 0 0 50px rgb(255, 174, 0);}
+  96%{rotate: calc(336deg);  margin-left:10%; box-shadow: 0 0 50px rgb(255, 123, 0);}
+  97%{rotate: calc(342deg);  margin-left:10%; box-shadow: 0 0 50px rgb(255, 102, 0);}
+  98%{rotate: calc(348deg);  margin-left:10%; box-shadow: 0 0 50px rgb(255, 72, 0);}
+  99%{rotate: calc(355deg);  margin-left:10%; box-shadow: 0 0 50px rgb(255, 38, 0);}
+  100%{rotate:calc(360deg);  margin-left:10%; box-shadow: 0 0 50px rgb(212, 0, 255);}
+  
+}
+
+a.tooltip {
+  outline: none;
+}
+
+a.tooltip strong {
+  line-height: 30px;
+}
+
+a.tooltip:hover {
+  text-decoration: none;
+}
+
+a.tooltip span {
+  border-radius: 2px;
+  box-shadow: 0px 0px 8px 4px #666;
+  display: none;
+  margin-left: 80px;
+  padding: 5px 5px;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+}
+
+.callout {
+  border: 0;
+  left: 120px;
+  position: absolute;
+  top: -14px;
+  z-index: 20;
+}

@@ -8,15 +8,18 @@
 main{
   box-shadow: 0 0 300px 1px rgb(128, 126, 0); 
   animation-name: mainlight;
-  animation-duration: 10s;
+  animation-duration: 9.5s;
   animation-iteration-count: infinite;
   @keyframes mainlight{
-    0%  {box-shadow: 0 0 300px 1px rgb(0, 128, 128);};
-    10% {box-shadow: 0 0 300px 1px rgb(0, 128, 128); };
-    40% {box-shadow: 0 0 300px 1px rgb(0, 34, 128); };
-    60% {box-shadow: 0 0 300px 1px rgb(0, 70, 128); };
-    70% {box-shadow: 0 0 300px 1px rgb(0, 128, 107); };
-    100%{box-shadow: 0 0 300px 1px rgb(0, 128, 128); };
+          0%  {box-shadow: 0 0 30px 0  #d33108;}
+          10% {box-shadow: 0 0 10px 0  #d33108;}
+          30% {box-shadow: 0 0 40px 0  #ff4800;}
+          40% {box-shadow: 0 0 10px 0  #ff950a;}
+          50% {box-shadow: 0 0 40px 0  #d81d08;} 
+          60% {box-shadow: 0 0 10px 0  #d33108;} 
+          70% {box-shadow: 0 0 40px 0  #ff950a;}
+          90% {box-shadow: 0 0 10px 0  #d33108;}
+          100%{box-shadow: 0 0 30px 0  #eb4a00;}
   }
 }
 
@@ -29,7 +32,7 @@ header{
     padding: 010px 0.5rem 10px 0.5rem;
     box-sizing: border-box;
     animation-name: lightHeader;
-    animation-duration: 1s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
@@ -38,9 +41,15 @@ header{
   }
 
       @keyframes lightHeader{
-        0%  {box-shadow: 0 0 20px 0 rgba(255, 255, 0, 0.493);}
-        50% {box-shadow: 0 0 20px 0 rgba(255, 166, 0, 0.507);}
-        100%{box-shadow: 0 0 20px 0 rgba(0, 0, 255, 0.527);}
+          0%  {box-shadow: 0 0 30px 0  #d33108;}
+          10% {box-shadow: 0 0 10px 0  #d33108;}
+          30% {box-shadow: 0 0 40px 0  #ff4800;}
+          40% {box-shadow: 0 0 10px 0  #ff950a;}
+          50% {box-shadow: 0 0 40px 0  #d81d08;} 
+          60% {box-shadow: 0 0 10px 0  #d33108;} 
+          70% {box-shadow: 0 0 40px 0  #ff950a;}
+          90% {box-shadow: 0 0 10px 0  #d33108;}
+          100%{box-shadow: 0 0 30px 0  #eb4a00;}
       }
 
 
@@ -349,7 +358,7 @@ header .spanFullSMarg{
 /* IMG LAMPADA */
 header .lampada{
   position: absolute;
-  margin: -14px 0 0 23.3%;
+  margin: -20px 0 0 45%;
   border-radius: 50%;
   width: 40px;
   rotate:calc(50deg) ;

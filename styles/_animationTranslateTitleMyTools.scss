@@ -1,0 +1,43 @@
+
+
+/* Animation dos Titulos das Tools no Contente | CONTEUDO */
+
+/* Freelancer Area Animation */
+
+/* F */
+
+.caixaParaAnimacaoDosTitulosDasToolsEntrarem .ToolsTranslateAnimation{
+  animation-name:translatex;
+  animation-duration: 1s;
+
+}
+
+
+      @keyframes translatex{
+        0%   {transform: translateX(180%);letter-spacing: 15px;display: flex;justify-content: center;align-items: center;}
+        51%  {letter-spacing: 1px;} 
+        52%  {letter-spacing: 2px;} 
+        53%  {letter-spacing: 3px;} 
+        54%  {letter-spacing: 4px;} 
+        55%  {letter-spacing: 5px;} 
+        56%  {letter-spacing: 6px;} 
+        57%  {letter-spacing: 7px;} 
+        58%  {letter-spacing: 8px;} 
+        59%  {letter-spacing: 9px;}
+        60%  {letter-spacing: 10px;}
+        61%  {letter-spacing: 9px;}
+        83%  {letter-spacing: 8px;}
+        84%  {letter-spacing: 10px;} 
+        91%  {letter-spacing: 9px;}  
+        92%  {letter-spacing: 8px;}  
+        93%  {letter-spacing: 7px;}  
+        94%  {letter-spacing: 6px}  
+        95%  {letter-spacing: 5px;}
+        96%  {letter-spacing: 4px;}  
+        97%  {letter-spacing: 3px;} 
+        98%  {letter-spacing: 2px;} 
+        99%  {letter-spacing: 1px;}                
+        100% {transform:translateX(0); letter-spacing: 0px;display: flex;justify-content: center;align-items: center;}
+      }
+
+      

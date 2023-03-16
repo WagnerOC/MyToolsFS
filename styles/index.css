@@ -3,27 +3,36 @@
 main {
   box-shadow: 0 0 300px 1px rgb(128, 126, 0);
   animation-name: mainlight;
-  animation-duration: 10s;
+  animation-duration: 9.5s;
   animation-iteration-count: infinite;
 }
 @keyframes mainlight {
   0% {
-    box-shadow: 0 0 300px 1px rgb(0, 128, 128);
+    box-shadow: 0 0 30px 0 #d33108;
   }
   10% {
-    box-shadow: 0 0 300px 1px rgb(0, 128, 128);
+    box-shadow: 0 0 10px 0 #d33108;
+  }
+  30% {
+    box-shadow: 0 0 40px 0 #ff4800;
   }
   40% {
-    box-shadow: 0 0 300px 1px rgb(0, 34, 128);
+    box-shadow: 0 0 10px 0 #ff950a;
+  }
+  50% {
+    box-shadow: 0 0 40px 0 #d81d08;
   }
   60% {
-    box-shadow: 0 0 300px 1px rgb(0, 70, 128);
+    box-shadow: 0 0 10px 0 #d33108;
   }
   70% {
-    box-shadow: 0 0 300px 1px rgb(0, 128, 107);
+    box-shadow: 0 0 40px 0 #ff950a;
+  }
+  90% {
+    box-shadow: 0 0 10px 0 #d33108;
   }
   100% {
-    box-shadow: 0 0 300px 1px rgb(0, 128, 128);
+    box-shadow: 0 0 30px 0 #eb4a00;
   }
 }
 
@@ -36,7 +45,7 @@ header {
   padding: 10px 0.5rem 10px 0.5rem;
   box-sizing: border-box;
   animation-name: lightHeader;
-  animation-duration: 1s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: ease-in-out;
@@ -45,13 +54,31 @@ header {
 
 @keyframes lightHeader {
   0% {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 0, 0.493);
+    box-shadow: 0 0 30px 0 #d33108;
+  }
+  10% {
+    box-shadow: 0 0 10px 0 #d33108;
+  }
+  30% {
+    box-shadow: 0 0 40px 0 #ff4800;
+  }
+  40% {
+    box-shadow: 0 0 10px 0 #ff950a;
   }
   50% {
-    box-shadow: 0 0 20px 0 rgba(255, 166, 0, 0.507);
+    box-shadow: 0 0 40px 0 #d81d08;
+  }
+  60% {
+    box-shadow: 0 0 10px 0 #d33108;
+  }
+  70% {
+    box-shadow: 0 0 40px 0 #ff950a;
+  }
+  90% {
+    box-shadow: 0 0 10px 0 #d33108;
   }
   100% {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 255, 0.527);
+    box-shadow: 0 0 30px 0 #eb4a00;
   }
 }
 header .toolLogoImg { /* Img Engrenagem */
@@ -396,7 +423,7 @@ header .spanFullSMarg span:nth-of-type(9) {
 /* IMG LAMPADA */
 header .lampada {
   position: absolute;
-  margin: -14px 0 0 23.3%;
+  margin: -20px 0 0 45%;
   border-radius: 50%;
   width: 40px;
   rotate: 50deg;
@@ -1788,48 +1815,48 @@ Defini direto no arquivo _bodyHtml.scss
   height: 196vh;
   margin: 50px 0 0 24%;
   border-radius: 10px;
-  background-color: rgba(221, 221, 193, 0.089); /* rgb(223, 223, 131); */
+  background-color: rgba(0, 0, 0, 0.925); /* rgb(223, 223, 131); */
   box-sizing: border-box;
   padding: 50px 20px;
   animation-name: caixadeconteudo;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  z-index: 100;
+  z-index: -100;
 }
 @keyframes caixadeconteudo {
   0% {
-    box-shadow: 0 0 30px 0 #fff;
+    box-shadow: 0 0 30px 0 #d33108;
   }
   10% {
-    box-shadow: none;
+    box-shadow: 0 0 10px 0 #d33108;
   }
   30% {
     box-shadow: 0 0 40px 0 #ff4800;
   }
   40% {
-    box-shadow: none;
+    box-shadow: 0 0 10px 0 #ff950a;
   }
   50% {
-    box-shadow: 0 0 40px 0 #ad9898;
+    box-shadow: 0 0 40px 0 #d81d08;
   }
   60% {
-    box-shadow: none;
+    box-shadow: 0 0 10px 0 #d33108;
   }
   70% {
-    box-shadow: 0 0 40px 0 #ffda0a;
+    box-shadow: 0 0 40px 0 #ff950a;
   }
   90% {
-    box-shadow: none;
+    box-shadow: 0 0 10px 0 #d33108;
   }
   100% {
-    box-shadow: 0 0 30px 0 #fff;
+    box-shadow: 0 0 30px 0 #eb4a00;
   }
 }
 
 /* Caixa como um todo */
 .caixaAllTools {
+  margin-top: 40px;
   padding: 20px;
-  margin-top: 10px;
   margin-bottom: 10px;
   display: grid;
   grid-auto-flow: row;
@@ -1837,30 +1864,51 @@ Defini direto no arquivo _bodyHtml.scss
 }
 
 /* Cada Caixa de Tools | Freelancer Area | Docum.. */
-.displayFlexTools {
+.CaixaDeCadaTool {
   text-align: center;
   padding: 10px 20px 15px 10px;
   box-shadow: 0 0 10px darkred;
   border: 1px solid rgba(119, 119, 119, 0.1843137255);
   border-radius: 8px;
-}
-
-.displayFlexTools:hover {
+  box-sizing: border-box;
   animation-name: caixaAllToolsanima;
-  animation-duration: 2s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   cursor: pointer;
 }
 @keyframes caixaAllToolsanima {
   0% {
     box-shadow: 0 0 10px darkred;
+    transform: skew(1deg);
   }
   50% {
-    box-shadow: 0 0 10px rgb(113, 238, 150);
+    box-shadow: 0 0 10px rgb(233, 135, 7);
+    transform: skew(-1deg);
   }
   100% {
     box-shadow: 0 0 10px darkred;
+    transform: skew(1deg);
   }
+}
+
+.caixaParaAnimacaoDosTitulosDasToolsEntrarem {
+  height: 38px;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  position: relative;
+}
+
+/* Titulo das Tools */
+.tituloDasToolsSpan {
+  color: rgb(233, 231, 231);
+  font-size: 30px;
+  font-family: "Righteous", cursive;
+}
+
+/* Margin-left Titulo Tools */
+.marginLeftTools {
+  margin-left: 1%;
 }
 
 /* Colunas dentro de cada Caixa de Tools */
@@ -1879,8 +1927,8 @@ Defini direto no arquivo _bodyHtml.scss
   text-align: center;
   line-height: 35px;
   letter-spacing: 6px;
-  box-shadow: 0 0 20px rgb(10, 1, 1);
-  background-color: rgb(218, 178, 46);
+  box-shadow: 0 0 10px rgb(187, 4, 4);
+  background-color: rgb(27, 138, 64);
   width: 100%;
   margin-top: 10px;
   padding: 6px;
@@ -1908,9 +1956,50 @@ Defini direto no arquivo _bodyHtml.scss
 
 /* Links nas Li´s  */
 .caixaAllTools a {
-  color: rgb(76, 0, 255);
+  color: darkred;
   text-decoration: none;
   font-family: "Spectral SC", serif;
+  animation-name: ancorlis;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes ancorlis {
+  0% {
+    text-shadow: 1px 1px 8px #d33108;
+    color: #ff950a;
+  }
+  10% {
+    text-shadow: 0 2px 4px #d33108;
+    color: #ff4800;
+  }
+  30% {
+    text-shadow: 0 1px 8px #ff4800;
+    color: #d81d08;
+  }
+  40% {
+    text-shadow: 0 2px 4px #ff950a;
+    color: #ff950a;
+  }
+  50% {
+    text-shadow: 2px -1px 8px #d81d08;
+    color: #eb4a00;
+  }
+  60% {
+    text-shadow: 0 2px 4px #d33108;
+    color: #d81d08;
+  }
+  70% {
+    text-shadow: 0 -1px 8px #ff950a;
+    color: #ff950a;
+  }
+  90% {
+    text-shadow: 0 2px 4px #d33108;
+    color: #eb4a00;
+  }
+  100% {
+    text-shadow: 1px 1px 8px #eb4a00;
+    color: #d33108;
+  }
 }
 
 /* Cursos e Certificados */
@@ -2314,7 +2403,7 @@ Defini direto no arquivo _bodyHtml.scss
   line-height: 28px;
   border-radius: 10px;
   border: 1px solid rgba(255, 167, 4, 0.212);
-  background-color: rgba(44, 13, 182, 0.418);
+  background-color: rgba(0, 0, 0, 0.925); /*Roxo legal rgba(44, 13, 182, 0.418);  */
   box-shadow: 0 0 100px 0 #fff;
   animation-name: borderCaixaStudent;
   animation-duration: 10s;
@@ -2325,31 +2414,31 @@ Defini direto no arquivo _bodyHtml.scss
 
 @keyframes borderCaixaStudent {
   0% {
-    box-shadow: 0 0 30px 0 #fff;
+    box-shadow: 0 0 30px 0 #d33108;
   }
   10% {
-    box-shadow: none;
+    box-shadow: 0 0 10px 0 #d33108;
   }
   30% {
     box-shadow: 0 0 40px 0 #ff4800;
   }
   40% {
-    box-shadow: none;
+    box-shadow: 0 0 10px 0 #ff950a;
   }
   50% {
-    box-shadow: 0 0 40px 0 #ad9898;
+    box-shadow: 0 0 40px 0 #d81d08;
   }
   60% {
-    box-shadow: none;
+    box-shadow: 0 0 10px 0 #d33108;
   }
   70% {
-    box-shadow: 0 0 40px 0 #ffda0a;
+    box-shadow: 0 0 40px 0 #ff950a;
   }
   90% {
-    box-shadow: none;
+    box-shadow: 0 0 10px 0 #d33108;
   }
   100% {
-    box-shadow: 0 0 30px 0 #fff;
+    box-shadow: 0 0 30px 0 #eb4a00;
   }
 }
 /* IMG Desenvolvedor*/
@@ -3145,6 +3234,7 @@ extenso o cód
   height: 85px;
   margin: auto;
   margin-bottom: 30px;
+  z-index: 1000;
 }
 
 .iframeMusicCaixa::before {
@@ -3827,10 +3917,7 @@ a.tooltip span {
 body {
   margin: 0 15% 0 15%;
   width: 70%;
-  background-image: url("../img/developer_body_backg.jpg.png");
-  background-repeat: repeat-y;
-  background-size: cover;
-  background-position: center;
+  background-color: black;
 }
 
 body:hover {
@@ -3891,12 +3978,813 @@ h1 {
   }
 }
 
-h2 {
-  color: darkblue;
-  font-size: 35px;
-  font-family: "Righteous", cursive;
-}
-
 ul {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Spectral SC", serif;
+  animation-name: ancoriis;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+}
+@keyframes ancorliS {
+  0% {
+    text-shadow: 0 0 30px 0 #d33108;
+  }
+  10% {
+    text-shadow: 0 0 10px 0 #d33108;
+  }
+  30% {
+    text-shadow: 0 0 40px 0 #ff4800;
+  }
+  40% {
+    text-shadow: 0 0 10px 0 #ff950a;
+  }
+  50% {
+    text-shadow: 0 0 40px 0 #d81d08;
+  }
+  60% {
+    text-shadow: 0 0 10px 0 #d33108;
+  }
+  70% {
+    text-shadow: 0 0 40px 0 #ff950a;
+  }
+  90% {
+    text-shadow: 0 0 10px 0 #d33108;
+  }
+  100% {
+    text-shadow: 0 0 30px 0 #eb4a00;
+  }
+}
+
+.foguete {
+  width: 200px;
+  position: absolute;
+  margin-top: -1700px;
+  rotate: 5deg;
+  animation-name: foguetetranversal;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes foguetetranversal {
+  0% {
+    transform: translate(-150%, 500%);
+  }
+  100% {
+    transform: translate(400%, -300%);
+  }
+}
+/* ANIMATIONS ---> MY TOOLS | COURSES | MY CERTIFICATIONS ... CAIXA DE CONTEUDOS*/
+/* Animation Workana */
+a.tooltip:hover span.spanWorkanaImgAnimation {
+  background-image: url("../img/workana_logo.png");
+  background-position: center center;
+  background-size: contain; /* <------ */
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  color: #eee;
+  display: inline;
+  position: absolute;
+  rotate: 0deg;
+  margin-top: -2px;
+  margin-left: 100px;
+  animation-name: girarmytoolscursos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Animation Freelancer */
+a.tooltip:hover span.spanFreelancerImgAnimation {
+  background-image: url("../img/freelancer.png");
+  background-position: center center;
+  background-size: contain; /* <------ */
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  color: #eee;
+  display: inline;
+  position: absolute;
+  rotate: 0deg;
+  margin-top: -2px;
+  margin-left: 100px;
+  animation-name: girarmytoolscursos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Animation 99 Freelas */
+a.tooltip:hover span.span99freelasImgAnimation {
+  background-image: url("https://drive.google.com/file/d/1_JvFHMhgerd9OhPzczIDG6EkXJKikRiF/view?usp=share_link");
+  background-position: center center;
+  background-size: contain; /* <------ */
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  color: #eee;
+  display: inline;
+  position: absolute;
+  rotate: 0deg;
+  margin-top: -2px;
+  margin-left: 100px;
+  animation-name: girarmytoolscursos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Animation Up Work */
+a.tooltip:hover span.spanUpWorkImgAnimation {
+  background-image: url("../img/upwork.png");
+  background-position: center center;
+  background-size: contain; /* <------ */
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  color: #eee;
+  display: inline;
+  position: absolute;
+  rotate: 0deg;
+  margin-top: -2px;
+  margin-left: 100px;
+  animation-name: girarmytoolscursos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Animation Scalable Path */
+a.tooltip:hover span.spanScalablePathImgAnimation {
+  background-image: url("../img/scalablepath.png");
+  background-position: center center;
+  background-size: contain; /* <------ */
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  color: #eee;
+  display: inline;
+  position: absolute;
+  rotate: 0deg;
+  margin-top: -2px;
+  margin-left: 100px;
+  animation-name: girarmytoolscursos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Animation Toptal */
+a.tooltip:hover span.spanToptalImgAnimation {
+  background-image: url("../img/toptal.png");
+  background-position: center center;
+  background-size: contain; /* <------ */
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  color: #eee;
+  display: inline;
+  position: absolute;
+  rotate: 0deg;
+  margin-top: -2px;
+  margin-left: 100px;
+  animation-name: girarmytoolscursos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+@keyframes girarmytoolscursos {
+  0% {
+    rotate: 3deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 0, 255);
+  }
+  1% {
+    rotate: 6deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(212, 0, 255);
+  }
+  2% {
+    rotate: 9deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(162, 0, 255);
+  }
+  3% {
+    rotate: 12deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(119, 0, 255);
+  }
+  4% {
+    rotate: 15deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(89, 0, 255);
+  }
+  5% {
+    rotate: 18deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(89, 0, 255);
+  }
+  6% {
+    rotate: 21deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(55, 0, 255);
+  }
+  7% {
+    rotate: 24deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(17, 0, 255);
+  }
+  8% {
+    rotate: 27deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 17, 255);
+  }
+  9% {
+    rotate: 30deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 38, 255);
+  }
+  10% {
+    rotate: 33deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 81, 255);
+  }
+  11% {
+    rotate: 36deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 119, 255);
+  }
+  12% {
+    rotate: 39deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 132, 255);
+  }
+  13% {
+    rotate: 42deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 153, 255);
+  }
+  14% {
+    rotate: 45deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 195, 255);
+  }
+  15% {
+    rotate: 48deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 247, 255);
+  }
+  16% {
+    rotate: 51deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 234);
+  }
+  17% {
+    rotate: 54deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 179);
+  }
+  18% {
+    rotate: 57deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 149);
+  }
+  19% {
+    rotate: 60deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 128);
+  }
+  20% {
+    rotate: 63deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 85);
+  }
+  21% {
+    rotate: 66deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 42);
+  }
+  22% {
+    rotate: 69deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(9, 255, 0);
+  }
+  23% {
+    rotate: 72deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(60, 255, 0);
+  }
+  24% {
+    rotate: 75deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(123, 255, 0);
+  }
+  25% {
+    rotate: 78deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(217, 255, 0);
+  }
+  26% {
+    rotate: 81deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 208, 0);
+  }
+  27% {
+    rotate: 85deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 174, 0);
+  }
+  28% {
+    rotate: 88deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 123, 0);
+  }
+  29% {
+    rotate: 91deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 102, 0);
+  }
+  30% {
+    rotate: 94deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 72, 0);
+  }
+  31% {
+    rotate: 97deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 38, 0);
+  }
+  32% {
+    rotate: 100deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 0, 0);
+  }
+  33% {
+    rotate: 103deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 38, 0);
+  }
+  34% {
+    rotate: 106deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 72, 0);
+  }
+  35% {
+    rotate: 109deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 102, 0);
+  }
+  36% {
+    rotate: 112deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 123, 0);
+  }
+  37% {
+    rotate: 115deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 174, 0);
+  }
+  38% {
+    rotate: 118deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 208, 0);
+  }
+  39% {
+    rotate: 121deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(217, 255, 0);
+  }
+  40% {
+    rotate: 124deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(123, 255, 0);
+  }
+  41% {
+    rotate: 127deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(60, 255, 0);
+  }
+  42% {
+    rotate: 130deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(9, 255, 0);
+  }
+  43% {
+    rotate: 133deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 42);
+  }
+  44% {
+    rotate: 136deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 85);
+  }
+  45% {
+    rotate: 139deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 128);
+  }
+  46% {
+    rotate: 142deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 149);
+  }
+  47% {
+    rotate: 145deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 179);
+  }
+  48% {
+    rotate: 148deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 234);
+  }
+  49% {
+    rotate: 151deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(23, 211, 218);
+  }
+  50% {
+    rotate: 154deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 247, 255);
+  }
+  51% {
+    rotate: 158deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 195, 255);
+  }
+  52% {
+    rotate: 162deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 153, 255);
+  }
+  53% {
+    rotate: 166deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 132, 255);
+  }
+  54% {
+    rotate: 170deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 119, 255);
+  }
+  55% {
+    rotate: 174deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 81, 255);
+  }
+  56% {
+    rotate: 178deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(31, 58, 211);
+  }
+  57% {
+    rotate: 182deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 38, 255);
+  }
+  58% {
+    rotate: 186deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 17, 255);
+  }
+  59% {
+    rotate: 190deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(29, 42, 226);
+  }
+  60% {
+    rotate: 194deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(55, 0, 255);
+  }
+  61% {
+    rotate: 198deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(89, 0, 255);
+  }
+  62% {
+    rotate: 202deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(119, 0, 255);
+  }
+  63% {
+    rotate: 206deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(162, 0, 255);
+  }
+  64% {
+    rotate: 210deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(174, 0, 255);
+  }
+  65% {
+    rotate: 214deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(212, 0, 255);
+  }
+  66% {
+    rotate: 218deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 0, 255);
+  }
+  67% {
+    rotate: 222deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(212, 0, 255);
+  }
+  68% {
+    rotate: 226deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(174, 0, 255);
+  }
+  69% {
+    rotate: 230deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(162, 0, 255);
+  }
+  70% {
+    rotate: 234deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(119, 0, 255);
+  }
+  71% {
+    rotate: 238deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(89, 0, 255);
+  }
+  72% {
+    rotate: 242deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(55, 0, 255);
+  }
+  73% {
+    rotate: 244deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 17, 255);
+  }
+  74% {
+    rotate: 248deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(29, 42, 226);
+  }
+  75% {
+    rotate: 252deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 38, 255);
+  }
+  76% {
+    rotate: 256deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(31, 58, 211);
+  }
+  77% {
+    rotate: 260deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 81, 255);
+  }
+  78% {
+    rotate: 264deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 119, 255);
+  }
+  79% {
+    rotate: 268deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 132, 255);
+  }
+  80% {
+    rotate: 272deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 153, 255);
+  }
+  81% {
+    rotate: 276deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 195, 255);
+  }
+  82% {
+    rotate: 280deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 247, 255);
+  }
+  83% {
+    rotate: 284deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(23, 211, 218);
+  }
+  84% {
+    rotate: 288deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 234);
+  }
+  85% {
+    rotate: 292deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 179);
+  }
+  86% {
+    rotate: 296deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 149);
+  }
+  87% {
+    rotate: 300deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 128);
+  }
+  88% {
+    rotate: 304deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 85);
+  }
+  89% {
+    rotate: 308eg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(0, 255, 42);
+  }
+  90% {
+    rotate: 312deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(9, 255, 0);
+  }
+  91% {
+    rotate: 314deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(60, 255, 0);
+  }
+  92% {
+    rotate: 318deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(123, 255, 0);
+  }
+  93% {
+    rotate: 322deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(217, 255, 0);
+  }
+  94% {
+    rotate: 325deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 208, 0);
+  }
+  95% {
+    rotate: 333deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 174, 0);
+  }
+  96% {
+    rotate: 336deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 123, 0);
+  }
+  97% {
+    rotate: 342deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 102, 0);
+  }
+  98% {
+    rotate: 348deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 72, 0);
+  }
+  99% {
+    rotate: 355deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(255, 38, 0);
+  }
+  100% {
+    rotate: 360deg;
+    margin-left: 10%;
+    box-shadow: 0 0 50px rgb(212, 0, 255);
+  }
+}
+a.tooltip {
+  outline: none;
+}
+
+a.tooltip strong {
+  line-height: 30px;
+}
+
+a.tooltip:hover {
+  text-decoration: none;
+}
+
+a.tooltip span {
+  border-radius: 2px;
+  box-shadow: 0px 0px 8px 4px #666;
+  display: none;
+  margin-left: 80px;
+  padding: 5px 5px;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+}
+
+.callout {
+  border: 0;
+  left: 120px;
+  position: absolute;
+  top: -14px;
+  z-index: 20;
+}
+
+/* Animation dos Titulos das Tools no Contente | CONTEUDO */
+/* Freelancer Area Animation */
+/* F */
+.caixaParaAnimacaoDosTitulosDasToolsEntrarem .ToolsTranslateAnimation {
+  animation-name: translatex;
+  animation-duration: 1s;
+}
+
+@keyframes translatex {
+  0% {
+    transform: translateX(180%);
+    letter-spacing: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  51% {
+    letter-spacing: 1px;
+  }
+  52% {
+    letter-spacing: 2px;
+  }
+  53% {
+    letter-spacing: 3px;
+  }
+  54% {
+    letter-spacing: 4px;
+  }
+  55% {
+    letter-spacing: 5px;
+  }
+  56% {
+    letter-spacing: 6px;
+  }
+  57% {
+    letter-spacing: 7px;
+  }
+  58% {
+    letter-spacing: 8px;
+  }
+  59% {
+    letter-spacing: 9px;
+  }
+  60% {
+    letter-spacing: 10px;
+  }
+  61% {
+    letter-spacing: 9px;
+  }
+  83% {
+    letter-spacing: 8px;
+  }
+  84% {
+    letter-spacing: 10px;
+  }
+  91% {
+    letter-spacing: 9px;
+  }
+  92% {
+    letter-spacing: 8px;
+  }
+  93% {
+    letter-spacing: 7px;
+  }
+  94% {
+    letter-spacing: 6px;
+  }
+  95% {
+    letter-spacing: 5px;
+  }
+  96% {
+    letter-spacing: 4px;
+  }
+  97% {
+    letter-spacing: 3px;
+  }
+  98% {
+    letter-spacing: 2px;
+  }
+  99% {
+    letter-spacing: 1px;
+  }
+  100% {
+    transform: translateX(0);
+    letter-spacing: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=index.css.map */

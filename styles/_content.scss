@@ -26,7 +26,7 @@ Defini direto no arquivo _bodyHtml.scss
   height: 196vh;
   margin: 50px 0 0 24%;
   border-radius: 10px;
-  background-color: rgba(221, 221, 193, 0.089); /* rgb(223, 223, 131); */
+  background-color: rgba(0, 0, 0, 0.925);  /* rgb(223, 223, 131); */
   box-sizing: border-box;
   
   padding: 50px 20px;
@@ -34,24 +34,24 @@ Defini direto no arquivo _bodyHtml.scss
   animation-name: caixadeconteudo;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  z-index: 100;
+  z-index: -100;
   @keyframes caixadeconteudo{
-          0%  {box-shadow: 0 0 30px 0  #fff;}
-          10% {box-shadow: none;}
+          0%  {box-shadow: 0 0 30px 0  #d33108;}
+          10% {box-shadow: 0 0 10px 0  #d33108;}
           30% {box-shadow: 0 0 40px 0  #ff4800;}
-          40% {box-shadow: none}
-          50% {box-shadow: 0 0 40px 0  #ad9898;} 
-          60% {box-shadow: none} 
-          70% {box-shadow: 0 0 40px 0  #ffda0a;}
-          90% {box-shadow: none}
-          100%{box-shadow: 0 0 30px 0  #fff;}
+          40% {box-shadow: 0 0 10px 0  #ff950a;}
+          50% {box-shadow: 0 0 40px 0  #d81d08;} 
+          60% {box-shadow: 0 0 10px 0  #d33108;} 
+          70% {box-shadow: 0 0 40px 0  #ff950a;}
+          90% {box-shadow: 0 0 10px 0  #d33108;}
+          100%{box-shadow: 0 0 30px 0  #eb4a00;}
   }
 }
 
 /* Caixa como um todo */
 .caixaAllTools{
+  margin-top: 40px;
   padding: 20px;
-  margin-top: 10px;
   margin-bottom: 10px;
   display: grid;
   grid-auto-flow: row;
@@ -60,30 +60,56 @@ Defini direto no arquivo _bodyHtml.scss
 }
 
 /* Cada Caixa de Tools | Freelancer Area | Docum.. */
-.displayFlexTools{
+.CaixaDeCadaTool{
   text-align: center;
   padding: 10px 20px 15px 10px;
   box-shadow: 0 0 10px darkred;
   border: 1px solid #7777772f ;
   border-radius: 8px;
-}
+  box-sizing: border-box;
 
-.displayFlexTools:hover{
   animation-name: caixaAllToolsanima;
-  animation-duration: 2s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   cursor: pointer;
   @keyframes caixaAllToolsanima{
     0%{
       box-shadow: 0 0 10px darkred;
+      transform: skew(1deg);
     }
     50%{
-      box-shadow: 0 0 10px rgb(113, 238, 150);
+      box-shadow: 0 0 10px rgb(233, 135, 7);
+      transform: skew(-1deg);
     }
     100%{
       box-shadow: 0 0 10px darkred;
+      transform: skew(1deg);
     }
   }
+}
+
+
+.caixaParaAnimacaoDosTitulosDasToolsEntrarem{
+  height: 38px;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  position: relative;
+}
+
+/* Titulo das Tools */
+.tituloDasToolsSpan{
+  color: rgb(233, 231, 231);
+  font-size: 30px;
+  font-family: 'Righteous', cursive;
+  
+}
+
+
+
+/* Margin-left Titulo Tools */
+.marginLeftTools{
+  margin-left: 1%;
 }
 
 /* Colunas dentro de cada Caixa de Tools */
@@ -105,15 +131,15 @@ Defini direto no arquivo _bodyHtml.scss
   line-height: 35px;
   letter-spacing: 6px;
 
-  box-shadow: 0 0 20px rgb(10, 1, 1);
-  background-color: rgb(218, 178, 46);
+  box-shadow: 0 0 10px rgb(187, 4, 4);
+  background-color: rgb(27, 138, 64);
   
   width: 100%;
   margin-top: 10px;
   padding: 6px;
-  border-radius: 8px;
-  
+  border-radius: 8px; 
 }
+
 .caixaAllTools li:hover{
   background-color: rgba(218, 178, 46,0.8);
   transition: 500ms;
@@ -136,11 +162,26 @@ Defini direto no arquivo _bodyHtml.scss
 
 /* Links nas Li´s  */
 .caixaAllTools a{
-  color: rgb(76, 0, 255);
+  color: darkred;
   text-decoration: none; 
-  font-family: 'Spectral SC', serif; 
-}
+  font-family: 'Spectral SC', serif;
+  animation-name: ancorlis;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  
 
+      @keyframes ancorlis{
+        0%  {text-shadow: 1px 1px 8px  #d33108;color:#ff950a}
+        10% {text-shadow: 0 2px 4px   #d33108;color:#ff4800}
+        30% {text-shadow: 0 1px 8px  #ff4800;color:#d81d08}
+        40% {text-shadow:  0 2px 4px   #ff950a;color:#ff950a}
+        50% {text-shadow:  2px -1px 8px   #d81d08;color:#eb4a00} 
+        60% {text-shadow:  0 2px 4px   #d33108;color:#d81d08} 
+        70% {text-shadow:  0 -1px 8px   #ff950a;color:#ff950a}
+        90% {text-shadow:  0 2px 4px   #d33108;color:#eb4a00}
+        100%{text-shadow:  1px 1px 8px   #eb4a00;color:#d33108}
+    }
+}
 
 /* Cursos e Certificados */
 .caixaCursosCertificados{

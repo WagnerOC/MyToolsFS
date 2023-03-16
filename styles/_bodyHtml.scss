@@ -7,10 +7,7 @@
 body{
   margin: 0 15% 0 15%;
   width: 70%;
-  background-image:url("../img/developer_body_backg.jpg.png");
-  background-repeat: repeat-y;
-  background-size: cover;
-  background-position: center; 
+  background-color: black;
 }
     
 body:hover{
@@ -65,13 +62,53 @@ h1{
     }
   }
   
-  h2{
-    color: darkblue;
-    font-size: 35px;
-    font-family: 'Righteous', cursive;
-  }
-
-
   ul{
     list-style-type: none;
   }
+
+  a{
+    text-decoration: none; 
+    font-family: 'Spectral SC', serif;
+    animation-name: ancoriis;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    z-index: 1000;
+  
+        @keyframes ancorliS{
+          0%  {text-shadow: 0 0 30px 0  #d33108;}
+          10% {text-shadow: 0 0 10px 0  #d33108;}
+          30% {text-shadow: 0 0 40px 0  #ff4800;}
+          40% {text-shadow:  0 0 10px 0  #ff950a;}
+          50% {text-shadow:  0 0 40px 0  #d81d08;} 
+          60% {text-shadow:  0 0 10px 0  #d33108;} 
+          70% {text-shadow:  0 0 40px 0  #ff950a;}
+          90% {text-shadow:  0 0 10px 0  #d33108;}
+          100%{text-shadow:  0 0 30px 0  #eb4a00;}
+      }
+  }
+
+ .foguete{
+      width: 200px;
+      position: absolute;
+      margin-top: -1700px;
+      rotate:(5deg);
+      animation-name: foguetetranversal;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      
+  }
+
+  @keyframes foguetetranversal{
+    0%{
+      transform: translate(-150%,500%);
+    }
+    100%{
+      transform: translate(400%,-300%);
+    }
+  }
+
+ 
+  
+
+
